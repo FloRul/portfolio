@@ -11,25 +11,23 @@
 \usepackage{xcolor}
 \usepackage{tabularx}
 
-% Font selection - using more modern and professional fonts
-\usepackage{bookman} % For main text - elegant serif font
-\usepackage{helvet} % Helvetica for sans-serif elements
-\usepackage{courier} % For monospaced content
-\renewcommand{\familydefault}{\rmdefault} % Use serif as default font
+% Font selection - clean and professional font
+\usepackage{helvet} % Use Helvetica for the entire document
+\renewcommand{\familydefault}{\sfdefault} % Set sans-serif as the default font
 
 % Define colors
 \definecolor{primary}{RGB}{0, 90, 160}
 \definecolor{darkgray}{RGB}{80, 80, 80}
 
-% Configure sections to use sans-serif font
+% Configure sections
 \titleformat{\section}
-  {\sffamily\Large\bfseries\color{primary}}
+  {\Large\bfseries\color{primary}}
   {}{0em}{}[\titlerule]
 \titlespacing*{\section}{0pt}{12pt}{8pt}
 
-% Configure subsections with sans-serif font
+% Configure subsections
 \titleformat{\subsection}
-  {\sffamily\bfseries\color{darkgray}}
+  {\bfseries\color{darkgray}}
   {}{0em}{}
 \titlespacing*{\subsection}{0pt}{8pt}{4pt}
 
@@ -50,8 +48,8 @@
 
 % Header
 \begin{center}
-  {\LARGE\sffamily\textbf{Florian Rumiel}} \\[0.3em]
-  {\large\sffamily\textit{Cloud Architect | AI Orchestration Specialist}} \\[0.5em]
+  {\LARGE\textbf{Florian Rumiel}} \\[0.3em]
+  {\large\textit{Cloud Architect | AI Orchestration Specialist}} \\[0.5em]
   \begin{tabular}{r c l}
     % Contact details
     \textit{Email:} & \href{mailto:rumie.florian@gmail.com}{rumie.florian@gmail.com} & \textit{Phone:} +418-905-3574 \\
@@ -61,20 +59,20 @@
 
 \section*{Skills}
 \begin{tabularx}{\textwidth}{@{}l X@{}}
-\textbf{\sffamily Areas of expertise:} & Cloud Architecture, LLM Orchestration, DevOps, Infrastructure as Code, Artificial Intelligence, Data Science \\[0.2em]
-\textbf{\sffamily Cloud Technologies:} & AWS, Terraform, AWS Bedrock, Docker \\[0.2em]
-\textbf{\sffamily AI Orchestration:} & LangChain, LlamaIndex, Haystack 2, FMEval, PGVector, ChromaDB, FAISS \\[0.2em]
-\textbf{\sffamily Programming:} & Python, Dart, Terraform, C\# \\[0.2em]
-\textbf{\sffamily Tools:} & VSCode, GitHub Actions, Amplify, SQL Server, Visual Studio, Docker, PostgreSQL \\[0.2em]
-\textbf{\sffamily Languages:} & French (native), English (expert) \\
+\textbf{Areas of expertise:} & Cloud Architecture, LLM Orchestration, DevOps, Infrastructure as Code, Artificial Intelligence, Data Science \\[0.2em]
+\textbf{Cloud Technologies:} & AWS, Terraform, AWS Bedrock, Docker \\[0.2em]
+\textbf{AI Orchestration:} & LangChain, LlamaIndex, Haystack 2, FMEval, PGVector, ChromaDB, FAISS \\[0.2em]
+\textbf{Programming:} & Python, Dart, Terraform, C\# \\[0.2em]
+\textbf{Tools:} & VSCode, GitHub Actions, Amplify, SQL Server, Visual Studio, Docker, PostgreSQL \\[0.2em]
+\textbf{Languages:} & French (native), English (expert) \\
 \end{tabularx}
 
 \section*{Certifications}
 \begin{itemize}[leftmargin=1.5em]
-  \item \textbf{\sffamily AWS Cloud Practitioner}
-  \item \textbf{\sffamily AWS Generative AI Essentials Partner}
-  \item \textbf{\sffamily Terraform Associate}, Certified Cloud Engineer
-  \item \textbf{\sffamily MongoDB} - Big Data (2020)
+  \item \textbf{AWS Cloud Practitioner}
+  \item \textbf{AWS Generative AI Essentials Partner}
+  \item \textbf{Terraform Associate}, Certified Cloud Engineer
+  \item \textbf{MongoDB} - Big Data (2020)
 \end{itemize}
 
 \section*{Professional Experience}
