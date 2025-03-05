@@ -1,0 +1,306 @@
+# System files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+build/
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Local development files
+local/
+
+# LaTeX related files in the resume directory
+# Core latex/pdflatex auxiliary files
+resume/*.aux
+resume/*.lof
+resume/*.log
+resume/*.lot
+resume/*.fls
+resume/*.out
+resume/*.toc
+resume/*.fmt
+resume/*.fot
+resume/*.cb
+resume/*.cb2
+resume/.*.lb
+
+# Intermediate documents
+resume/*.dvi
+resume/*.xdv
+resume/*-converted-to.*
+# these rules might exclude image files for figures etc.
+# resume/*.ps
+# resume/*.eps
+# resume/*.pdf
+
+# Generated if empty string is given at "Please type another file name for output:"
+resume/.pdf
+
+# Bibliography auxiliary files (bibtex/biblatex/biber)
+resume/*.bbl
+resume/*.bcf
+resume/*.blg
+resume/*-blx.aux
+resume/*-blx.bib
+resume/*.run.xml
+
+# Build tool auxiliary files
+resume/*.fdb_latexmk
+resume/*.synctex
+resume/*.synctex(busy)
+resume/*.synctex.gz
+resume/*.synctex.gz(busy)
+resume/*.pdfsync
+
+# Build tool directories for auxiliary files
+resume/latex.out/
+
+# Auxiliary and intermediate files from other packages
+# algorithms
+resume/*.alg
+resume/*.loa
+
+# achemso
+resume/acs-*.bib
+
+# amsthm
+resume/*.thm
+
+# beamer
+resume/*.nav
+resume/*.pre
+resume/*.snm
+resume/*.vrb
+
+# changes
+resume/*.soc
+
+# comment
+resume/*.cut
+
+# cprotect
+resume/*.cpt
+
+# elsarticle (documentclass of Elsevier journals)
+resume/*.spl
+
+# endnotes
+resume/*.ent
+
+# fixme
+resume/*.lox
+
+# feynmf/feynmp
+resume/*.mf
+resume/*.mp
+resume/*.t[1-9]
+resume/*.t[1-9][0-9]
+resume/*.tfm
+
+# glossaries
+resume/*.acn
+resume/*.acr
+resume/*.glg
+resume/*.glo
+resume/*.gls
+resume/*.glsdefs
+resume/*.lzo
+resume/*.lzs
+resume/*.slg
+resume/*.slo
+resume/*.sls
+
+# gnuplot
+resume/*.gnuplot
+resume/*.table
+
+# gnuplottex
+resume/*-gnuplottex-*
+
+# gregoriotex
+resume/*.gaux
+resume/*.glog
+resume/*.gtex
+
+# htlatex
+resume/*.4ct
+resume/*.4tc
+resume/*.idv
+resume/*.lg
+resume/*.trc
+resume/*.xref
+
+# hyperref
+resume/*.brf
+
+# knitr
+resume/*-concordance.tex
+
+# listings
+resume/*.lol
+
+# luatexja-ruby
+resume/*.ltjruby
+
+# makeidx
+resume/*.idx
+resume/*.ilg
+resume/*.ind
+
+# minitoc
+resume/*.maf
+resume/*.mlf
+resume/*.mlt
+resume/*.mtc[0-9]*
+resume/*.slf[0-9]*
+resume/*.slt[0-9]*
+resume/*.stc[0-9]*
+
+# minted
+resume/_minted*
+resume/*.pyg
+
+# morewrites
+resume/*.mw
+
+# newpax
+resume/*.newpax
+
+# nomencl
+resume/*.nlg
+resume/*.nlo
+resume/*.nls
+
+# pax
+resume/*.pax
+
+# pdfpcnotes
+resume/*.pdfpc
+
+# sagetex
+resume/*.sagetex.sage
+resume/*.sagetex.py
+resume/*.sagetex.scmd
+
+# scrwfile
+resume/*.wrt
+
+# sympy
+resume/*.sout
+resume/*.sympy
+resume/sympy-plots-for-*.tex/
+
+# pdfcomment
+resume/*.upa
+resume/*.upb
+
+# pythontex
+resume/*.pytxcode
+resume/pythontex-files-*/
+
+# tcolorbox
+resume/*.listing
+
+# thmtools
+resume/*.loe
+
+# TikZ & PGF
+resume/*.dpth
+resume/*.md5
+resume/*.auxlock
+
+# titletoc
+resume/*.ptc
+
+# todonotes
+resume/*.tdo
+
+# vhistory
+resume/*.hst
+resume/*.ver
+
+# easy-todo
+resume/*.lod
+
+# xcolor
+resume/*.xcp
+
+# xmpincl
+resume/*.xmpi
+
+# xindy
+resume/*.xdy
+
+# xypic precompiled matrices and outlines
+resume/*.xyc
+resume/*.xyd
+
+# endfloat
+resume/*.ttt
+resume/*.fff
+
+# Latexian
+resume/TSWLatexianTemp*
+
+## Editors:
+# WinEdt
+resume/*.bak
+resume/*.sav
+
+# Texpad
+resume/.texpadtmp
+
+# LyX
+resume/*.lyx~
+
+# Kile
+resume/*.backup
+
+# gummi
+resume/.*.swp
+
+# KBibTeX
+resume/*~[0-9]*
+
+# TeXnicCenter
+resume/*.tps
+
+# auto folder when using emacs and auctex
+resume/./auto/*
+resume/*.el
+
+# expex forward references with \gathertags
+resume/*-tags.tex
+
+# standalone packages
+resume/*.sta
+
+# Makeindex log files
+resume/*.lpz
+
+# xwatermark package
+resume/*.xwm

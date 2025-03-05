@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florian Rumiel | Cloud Architect & AI Orchestration Specialist</title>
+    <meta name="description" content="Florian Rumiel - Cloud Architect and AI Orchestration Specialist specializing in AWS, LLM Orchestration, and DevOps">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="#hero"><span class="primary-color">F</span>lorian<span class="primary-color">R</span>umiel</a>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#experience" class="nav-link">Experience</a></li>
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-text">
+                    <span class="text-reveal">Florian Rumiel</span>
+                </h1>
+                <div class="hero-subtitle animate-up">
+                    <span class="typed-text">Cloud Architect | AI Orchestration Specialist</span>
+                </div>
+                <div class="hero-cta animate-up">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#experience" class="btn btn-outline">See My Work</a>
+                </div>
+                <div class="social-links animate-up">
+                    <a href="https://linkedin.com/in/florian-rumiel" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/FloRul" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:rumie.florian@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#about">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>About Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="image-container">
+                        <!-- Add your actual image here -->
+                        <img src="assets/images/profile.jpg" alt="Florian Rumiel" onerror="this.src='https://via.placeholder.com/400x400?text=Florian+Rumiel'">
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <p class="lead">I'm a <span class="highlight">Cloud Architect</span> and <span class="highlight">AI Orchestration Specialist</span> with expertise in AWS, Terraform, and LLM technologies.</p>
+                    <p>Specializing in designing and implementing AI solutions, I focus on creating efficient, scalable cloud architectures that leverage the power of modern AI technologies. My experience spans from deploying conversational bots using RAG techniques to optimizing language model orchestration in enterprise environments.</p>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="info-title">Email:</span>
+                            <span class="info-value">rumie.florian@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Phone:</span>
+                            <span class="info-value">+418-905-3574</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Languages:</span>
+                            <span class="info-value">French (native), English (expert)</span>
+                        </div>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn btn-primary">Download CV</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Professional Experience</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="timeline">
+                <!-- Experience Item 1 -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <div class="date">2024 - Present</div>
+                        <h3>Cloud Architect</h3>
+                        <h4>Levio Conseils inc., Quebec</h4>
+                        <ul>
+                            <li>Design and implementation of a conversational bot based on RAG (RSDE-CSPRP)</li>
+                            <li>Systems architecture and solution development with Terraform and AWS</li>
+                            <li>Integration and management of authentication with Cognito and Flutter</li>
+                            <li>Design of Azure and AWS deployment pipelines</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <div class="date">2024</div>
+                        <h3>Cloud Architect - AI Orchestration</h3>
+                        <h4>Ministry of Cybersecurity and Digital Technology (MCN), Quebec</h4>
+                        <ul>
+                            <li>Design and optimization of language model orchestration in an AWS LZA environment</li>
+                            <li>Training of production support teams for maintainability of the orchestration system</li>
+                            <li>Research and development of orchestration techniques to reduce latency</li>
+                            <li>Implementation of test benches for monitoring conversational bot performance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <div class="date">2023 - 2024</div>
+                        <h3>Intermediate Programmer Technician (web .NET)</h3>
+                        <h4>Ministry of Natural Resources and Forests (MRNF), Quebec</h4>
+                        <ul>
+                            <li>Update of UI components for the land registry system</li>
+                            <li>Analysis of existing code base and optimization suggestions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 4 -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <div class="date">2022 - 2023</div>
+                        <h3>DevOps Analyst</h3>
+                        <h4>Ministry of Justice of Quebec (MJQ), Quebec</h4>
+                        <ul>
+                            <li>Configuration, deployment, and management of cloud resources on Azure</li>
+                            <li>Performance analysis using Azure monitoring and logging tools</li>
+                            <li>Development of a pipeline variable analysis and optimization tool</li>
+                            <li>Configuration of access control and deployment policies</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 5 -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <div class="date">2020 - 2022</div>
+                        <h3>Developer Analyst</h3>
+                        <h4>Noovelia</h4>
+                        <ul>
+                            <li>Development and maintenance of an inventory management system in C# .NET</li>
+                            <li>Refactoring to reduce frontend code base by 40%</li>
+                            <li>Improvement of UI/UX and maintenance of REST APIs in microservices architecture</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 6 -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <div class="date">2018 - 2020</div>
+                        <h3>IT Analyst</h3>
+                        <h4>Government of Canada</h4>
+                        <ul>
+                            <li>Bilingual technical support for federal employees</li>
+                            <li>Diagnosis and resolution of hardware and software issues</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Education</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="education-content">
+                <div class="education-item" data-aos="fade-up">
+                    <div class="edu-year">2017</div>
+                    <h3>International Technological Studies University Diploma (DUETI)</h3>
+                    <p>UQAC - Computer Science and Video Game Design</p>
+                </div>
+                <div class="education-item" data-aos="fade-up">
+                    <div class="edu-year">2017</div>
+                    <h3>Technology University Diploma</h3>
+                    <p>University of Burgundy - Computer Science</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Skills & Expertise</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="skill-categories">
+                <!-- Cloud Technologies -->
+                <div class="skill-category" data-aos="fade-up">
+                    <h3><i class="fas fa-cloud"></i> Cloud Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>AWS</h4>
+                                <div class="skill-progress">
+                                    <div class="progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>Terraform</h4>
+                                <div class="skill-progress">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>Docker</h4>
+                                <div class="skill-progress">
+                                    <div class="progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>AWS Bedrock</h4>
+                                <div class="skill-progress">
+                                    <div class="progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Orchestration -->
+                <div class="skill-category" data-aos="fade-up">
+                    <h3><i class="fas fa-robot"></i> AI Orchestration</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>LangChain</h4>
+                                <div class="skill-progress">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>LlamaIndex</h4>
+                                <div class="skill-progress">
+                                    <div class="progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>PGVector</h4>
+                                <div class="skill-progress">
+                                    <div class="progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>Haystack 2</h4>
+                                <div class="skill-progress">
+                                    <div class="progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div class="skill-category" data-aos="fade-up">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>Python</h4>
+                                <div class="skill-progress">
+                                    <div class="progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>Dart</h4>
+                                <div class="skill-progress">
+                                    <div class="progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>C#</h4>
+                                <div class="skill-progress">
+                                    <div class="progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>Terraform</h4>
+                                <div class="skill-progress">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="certifications" data-aos="fade-up">
+                <h3>Certifications</h3>
+                <div class="cert-grid">
+                    <div class="cert-item">
+                        <div class="cert-icon">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <h4>AWS Cloud Practitioner</h4>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-icon">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <h4>AWS Generative AI Essentials Partner</h4>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-icon">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <h4>Terraform Associate, Certified Cloud Engineer</h4>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h4>MongoDB - Big Data (2020)</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Personal Projects</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-content">
+                        <h3>RAG Solutions in AWS</h3>
+                        <p>Architecture and implementation of Retrieval Augmented Generation solutions in AWS.</p>
+                        <div class="tech-stack">
+                            <span>AWS</span>
+                            <span>LangChain</span>
+                            <span>PGVector</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-content">
+                        <h3>Legal Text Change Notifier</h3>
+                        <p>Design of an automated legal text change notification solution for legal departments.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>NLP</span>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-content">
+                        <h3>CV Enrichment Tool</h3>
+                        <p>Automated CV enrichment tool to facilitate assignment agent work.</p>
+                        <div class="tech-stack">
+                            <span>NLP</span>
+                            <span>Python</span>
+                            <span>AI</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-content">
+                        <h3>RitFlocking</h3>
+                        <p>Open Source library of steering behaviors for autonomous agents.</p>
+                        <div class="tech-stack">
+                            <span>C#</span>
+                            <span>Unity</span>
+                            <span>AI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/FloRul/RitFlocking" target="_blank" class="btn btn-sm">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-content">
+                        <h3>Unity Game Development</h3>
+                        <p>Game development with Unity using dependency injection and linear algebra.</p>
+                        <div class="tech-stack">
+                            <span>Unity</span>
+                            <span>C#</span>
+                            <span>Game Dev</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Get In Touch</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-envelope"></i></div>
+                        <div class="info">
+                            <h3>Email</h3>
+                            <p><a href="mailto:rumie.florian@gmail.com">rumie.florian@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="info">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+4189053574">+418-905-3574</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class="fab fa-linkedin"></i></div>
+                        <div class="info">
+                            <h3>LinkedIn</h3>
+                            <p><a href="https://linkedin.com/in/florian-rumiel" target="_blank">linkedin.com/in/florian-rumiel</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class="fab fa-github"></i></div>
+                        <div class="info">
+                            <h3>GitHub</h3>
+                            <p><a href="https://github.com/FloRul" target="_blank">github.com/FloRul</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#hero"><span class="primary-color">F</span>lorian<span class="primary-color">R</span>umiel</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/florian-rumiel" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/FloRul" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:rumie.florian@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Florian Rumiel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- JS Libraries -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
