@@ -8,6 +8,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -38,4 +40,4 @@ jobs:
           branch: gh-pages
           folder: .
           clean: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+          single-commit: true
