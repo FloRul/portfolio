@@ -3,14 +3,14 @@
 --------------------------------------------------------------*/
 :root {
     /* Colors */
-    --primary-color: #005AA0;
-    --primary-dark: #004480;
-    --primary-light: #3D7FB5;
+    --primary-color: #0066CC; /* Brighter blue for better contrast */
+    --primary-dark: #0052A3;
+    --primary-light: #4D94FF;
     --secondary-color: #2C3E50;
     --text-color: #333;
     --text-light: #666;
     --background: #F9F9F9;
-    --background-alt: #EFF3F6;
+    --background-alt: #E8ECF0; /* Slightly darker for better contrast */
     --white: #FFFFFF;
     --dark: #1A1A1A;
     --gray-light: #F0F0F0;
