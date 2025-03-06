@@ -10,14 +10,21 @@
     --secondary-color: #2C3E50;
     --text-color: #222;
     --text-light: #666;
-    --background: #F9F9F9;
-    --background-alt: #E8ECF0;
+    --background: #f0f4f8;
+    --background-alt: #e0e7f1;
     /* Slightly darker for better contrast */
     --white: #FFFFFF;
     --dark: #1A1A1A;
     --gray-light: #F0F0F0;
     --gray: #CCC;
     --success: #28a745;
+
+    /* Glassmorphism */
+    --glass-background: rgba(255, 255, 255, 0.25);
+    --glass-border: rgba(255, 255, 255, 0.18);
+    --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    --glass-blur: blur(10px);
+    --glass-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
 
     /* Typography */
     --font-main: 'Poppins', sans-serif;
@@ -62,7 +69,8 @@ html {
 body {
     font-family: var(--font-main);
     color: var(--text-color);
-    background-color: var(--background);
+    background: var(--background);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -135,6 +143,24 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Glassmorphic Elements
+--------------------------------------------------------------*/
+.glass {
+    background: var(--glass-background);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    background-image: var(--glass-gradient);
+}
+
+.glass-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px 0 rgba(31, 38, 135, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
 h1,
@@ -186,28 +212,36 @@ p {
 
 .btn-primary {
     background-color: var(--primary-color);
+    background-image: var(--glass-gradient);
     color: var(--white);
     box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
 
 .btn-primary:hover {
     background-color: var(--primary-dark);
     color: var(--white);
     transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--glass-shadow);
+    border: 1px solid var(--glass-border);
 }
 
 .btn-outline {
     background-color: transparent;
     color: var(--primary-color);
-    border: 2px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
 
 .btn-outline:hover {
-    background-color: var(--primary-color);
-    color: var(--white);
+    background-color: rgba(0, 102, 204, 0.2);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
     transform: translateY(-2px);
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--glass-shadow);
 }
 
 .btn-sm {
@@ -230,8 +264,12 @@ p {
 }
 
 .header.scrolled {
-    background-color: var(--white);
-    box-shadow: var(--shadow-sm);
+    background-color: var(--glass-background);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border-bottom: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    background-image: var(--glass-gradient);
     padding: 0.5rem 0;
 }
 
@@ -352,7 +390,10 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
     transition: all var(--transition-normal);
 }
 
@@ -487,10 +528,14 @@ p {
 
 .timeline-content {
     position: relative;
-    background-color: var(--white);
+    background: var(--glass-background);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    background-image: var(--glass-gradient);
     padding: var(--space-md);
     border-radius: var(--radius-md);
-    box-shadow: var(--shadow-md);
     margin-left: 50px;
 }
 
@@ -550,18 +595,23 @@ p {
 }
 
 .education-item {
-    background-color: var(--background-alt);
+    background: var(--glass-background);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    background-image: var(--glass-gradient);
     padding: var(--space-md);
     border-radius: var(--radius-md);
     margin-bottom: var(--space-md);
     position: relative;
-    box-shadow: var(--shadow-sm);
     transition: all var(--transition-normal);
 }
 
 .education-item:hover {
     transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 10px 40px 0 rgba(31, 38, 135, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .edu-year {
@@ -596,10 +646,14 @@ p {
 }
 
 .skill-category {
-    background-color: var(--white);
+    background: var(--glass-background);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    background-image: var(--glass-gradient);
     padding: var(--space-md);
     border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sm);
 }
 
 .skill-category h3 {
@@ -665,17 +719,22 @@ p {
 }
 
 .cert-item {
-    background-color: var(--white);
+    background: var(--glass-background);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    background-image: var(--glass-gradient);
     padding: var(--space-md);
     border-radius: var(--radius-md);
     text-align: center;
-    box-shadow: var(--shadow-sm);
     transition: all var(--transition-normal);
 }
 
 .cert-item:hover {
     transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 10px 40px 0 rgba(31, 38, 135, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .cert-icon {
@@ -704,15 +763,20 @@ p {
 .project-card {
     border-radius: var(--radius-md);
     overflow: hidden;
-    box-shadow: var(--shadow-sm);
+    background: var(--glass-background);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    background-image: var(--glass-gradient);
     transition: all var(--transition-normal);
-    background-color: var(--background-alt);
     height: 100%;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 10px 40px 0 rgba(31, 38, 135, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .project-content {
@@ -795,10 +859,14 @@ p {
 }
 
 .contact-form {
-    background-color: var(--white);
+    background: var(--glass-background);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    background-image: var(--glass-gradient);
     padding: var(--space-md);
     border-radius: var(--radius-md);
-    box-shadow: var(--shadow-md);
 }
 
 .form-group {
@@ -815,15 +883,20 @@ p {
 .form-group textarea {
     width: 100%;
     padding: 0.8rem;
-    border: 1px solid var(--gray);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: var(--radius-sm);
+    color: var(--text-color);
     transition: all var(--transition-normal);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 2px rgba(0, 90, 160, 0.2);
+    box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
+    background: rgba(255, 255, 255, 0.25);
 }
 
 /*--------------------------------------------------------------
