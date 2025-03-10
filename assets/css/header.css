@@ -1,0 +1,90 @@
+/*--------------------------------------------------------------
+# Header & Navigation
+--------------------------------------------------------------*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: var(--space-sm) 0;
+    background-color: transparent;
+    z-index: 1000;
+    transition: all var(--transition-normal);
+}
+
+.header.scrolled {
+    background-color: var(--glass-background);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border-bottom: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    background-image: var(--glass-gradient);
+    padding: 0.5rem 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--white);
+    transition: color var(--transition-normal);
+}
+
+.header.scrolled .logo a {
+    color: var(--secondary-color);
+}
+
+.nav-list {
+    display: flex;
+    gap: var(--space-md);
+}
+
+.nav-link {
+    color: var(--white);
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.header.scrolled .nav-link {
+    color: var(--secondary-color);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width var(--transition-normal);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all var(--transition-normal);
+    background-color: var(--white);
+}
+
+.header.scrolled .hamburger .bar {
+    background-color: var(--secondary-color);
+}
