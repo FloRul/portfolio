@@ -25,9 +25,11 @@
     0% {
         transform: translateX(-100%);
     }
+
     50% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(100%);
     }
@@ -58,6 +60,7 @@
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -125,11 +128,13 @@
 }
 
 /* Pulse Animation for Icons */
-.cert-icon, .contact-item .icon {
+.cert-icon,
+.contact-item .icon {
     position: relative;
 }
 
-.cert-icon::after, .contact-item .icon::after {
+.cert-icon::after,
+.contact-item .icon::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -140,21 +145,6 @@
     background-color: rgba(0, 90, 160, 0.3);
     opacity: 0;
     transform: scale(1.2);
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% {
-        opacity: 0;
-        transform: scale(1);
-    }
-    50% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 0;
-        transform: scale(1.5);
-    }
 }
 
 /* Project Card Hover Effect */
@@ -180,7 +170,8 @@
 }
 
 /* Form Input Focus Animation */
-.form-group input, .form-group textarea {
+.form-group input,
+.form-group textarea {
     position: relative;
     z-index: 1;
 }
@@ -220,12 +211,19 @@
 
 /* Scroll Down Animation */
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
         transform: translateY(0);
     }
+
     40% {
         transform: translateY(-20px);
     }
+
     60% {
         transform: translateY(-10px);
     }
