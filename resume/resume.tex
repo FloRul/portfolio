@@ -1,0 +1,157 @@
+﻿\documentclass[11pt,letterpaper]{article}
+
+% Basic packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tabularx}
+
+% Font selection - clean and professional font
+\usepackage{helvet} % Use Helvetica for the entire document
+\renewcommand{\familydefault}{\sfdefault} % Set sans-serif as the default font
+
+% Define colors
+\definecolor{primary}{RGB}{0, 90, 160}
+\definecolor{darkgray}{RGB}{80, 80, 80}
+
+% Configure sections
+\titleformat{\section}
+  {\Large\bfseries\color{primary}}
+  {}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{8pt}
+
+% Configure subsections
+\titleformat{\subsection}
+  {\bfseries\color{darkgray}}
+  {}{0em}{}
+\titlespacing*{\subsection}{0pt}{8pt}{4pt}
+
+% Remove paragraph indentation
+\setlength{\parindent}{0pt}
+
+% Set up links
+\hypersetup{
+  colorlinks=true,
+  linkcolor=primary,
+  urlcolor=primary
+}
+
+% Define custom list environments
+\setlist[itemize]{leftmargin=*}
+
+\begin{document}
+\begin{center}
+  {\LARGE\textbf{Florian Rumiel}} \\[0.3em]
+  {\large\textit{Fullstack developer}} \\[0.5em]
+  \begin{tabular}{r c l}
+    % Contact details
+    \textit{Email:} & \href{mailto:rumiel.florian@gmail.com}{rumiel.florian@gmail.com} & \textit{Phone:} +418-905-3574 \\
+    \textit{LinkedIn:} & \href{https://linkedin.com/in/florian-rumiel}{linkedin.com/in/florian-rumiel} & \textit{GitHub:} \href{https://github.com/FloRul}{github.com/FloRul} \\
+    \textit{Website:} & \href{https://florian-rumiel.com}{florianrumiel.com} \\
+  \end{tabular}
+\end{center}
+
+\section*{Skills}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Areas of expertise:} & Cloud Architecture, LLM Orchestration, DevOps, Infrastructure as Code, Artificial Intelligence (LLMs), Mobile development, Fullstack development \\[0.2em]
+\textbf{Cloud Technologies:} & AWS, Terraform, AWS Bedrock, Docker \\[0.2em]
+\textbf{AI Orchestration:} & LangChain, LlamaIndex, Haystack 2, FMEval, PGVector, ChromaDB, FAISS \\[0.2em]
+\textbf{Programming:} & Python, Dart/Flutter, Terraform, C\# \\[0.2em]
+\textbf{Tools:} & VSCode, GitHub Actions, Claude Code, Docker \\[0.2em]
+\textbf{Languages:} & French (native), English (bilingual) \\
+\textbf{Certifications:} & AWS Cloud Practitioner, Terraform Associate \\
+\end{tabularx}
+
+\section*{Professional Experience}
+
+\textbf{Senior Developer} \hfill 2024 - present\\
+\textit{Levio - Desjardins, Quebec}
+\begin{itemize}
+\item Involved in the design of the global realization strategy for a multi-million dollars modernization solution
+\item Implementation of pipelines to deploy api documentation websites
+\end{itemize}
+
+\textbf{Cloud Developer} \hfill 2024 - present\\
+\textit{Levio - Legal department, Quebec}
+\begin{itemize}
+\item Integrated website change detection system into company cloud infrastructure
+\item Managed authentication integration with Cognito and Flutter
+\item Created and optimized Azure and AWS deployment pipelines
+\end{itemize}
+
+\textbf{Cloud Developer - AI Orchestration} \hfill 2024\\
+\textit{Levio - Ministry of Cybersecurity and Digital Technology (MCN), Quebec}
+\begin{itemize}
+\item Developed inference orchestration algorithm with Amazon AI experts team for RAG-based chatbot using AWS Bedrock
+\item Optimized data ingestion pipeline for knowledge base using LangChain and Postgres vector database
+\item Trained production support teams on orchestration system maintenance
+\item Researched and implemented techniques to reduce latency and improve response quality
+\item Created test benches for conversational bot performance monitoring using Langfuse
+\end{itemize}
+
+\textbf{Developer} \hfill 2023 - 2024\\
+\textit{Ministry of Natural Resources and Forests (MRNF), Quebec}
+\begin{itemize}
+\item Updated UI components for land registry system
+\item Analyzed existing codebase and provided optimization recommendations
+\end{itemize}
+
+\textbf{Cloud Developer - AI Orchestration} \hfill 2023\\
+\textit{Levio, Quebec}
+\begin{itemize}
+\item Designed and implemented RAG based HR agent using AWS Bedrock and LlamaIndex
+\item Created and maintained data ingestion pipeline for HR agent using LangChain and Postgres vector database
+\item Tweaked the inference algorithm to improve response quality
+\item Created evaluation dataset to monitor and improve bot performance
+\end{itemize}
+
+\textbf{DevOps Analyst} \hfill 2022 - 2023\\
+\textit{Levio - Ministry of Justice of Quebec (MJQ), Quebec}
+\begin{itemize}
+\item Configured, deployed, and managed cloud resources on Azure
+\item Conducted performance analysis using Azure monitoring and logging tools
+\item Developed pipeline variable analysis and optimization tool
+\item Configured access control and deployment policies
+\end{itemize}
+
+\subsection*{Other Experience}
+
+\textbf{Fullstack Developer} \hfill 2020 - 2022\\
+\textit{Noovelia}
+\begin{itemize}
+\item Developed and maintained inventory management system  in C\# .NET
+\item Reduced frontend codebase by 40\% through refactoring
+\item Enhanced UI/UX and maintained REST APIs in microservices architecture
+\end{itemize}
+
+\textbf{IT Analyst} \hfill 2018 - 2020\\
+\textit{Government of Canada}
+\begin{itemize}
+\item Provided bilingual technical support for federal employees
+\item Diagnosed and resolved hardware and software issues
+\end{itemize}
+
+\section*{Education}
+\textbf{Bachelor in applied sciences} \hfill 2018\\
+\textit{UQAC} - Major in Computer Science and Video Game Design
+
+\textbf{Technology University Diploma} \hfill 2017\\
+\textit{University of Burgundy} - Computer Science
+
+\section*{Personal Projects}
+\begin{itemize}
+\item \href{https://github.com/FloRul/portfolio}{Personal website content management automation integrated with resume data}
+\item Applied to YCombinator's Startup program with a project to automate data extraction from various sources
+\item Designed and implemented RAG (retrieval augmented generation) solutions in AWS for company HR agent
+\item \href{https://github.com/FloRul/Satiserver}{Personal \& friends video game servers deployment, management and backup automation with AWS}
+\item Open source contribution to the Haystack 2 project (AWS Bedrock integration for LLM tool calling)
+\item Automated resume enrichment tool to facilitate assignment agent work
+\item \href{https://github.com/FloRul/RitFlocking}{Open Source library of steering behaviors for autonomous agents}
+\end{itemize}
+
+\end{document}
