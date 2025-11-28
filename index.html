@@ -4,9 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Florian Rumiel | Fullstack developer</title>
+    <title>Florian Rumiel | AI Solutions Architect</title>
     <meta name="description"
-        content="Florian Rumiel - Fullstack developer specializing in Cloud Architecture, LLM Orchestration, DevOps, and Infrastructure as Code">
+        content="Florian Rumiel - AI Solutions Architect with 5+ years of experience in enterprise-scale AI solutions, RAG systems, LLM orchestration, and cloud infrastructure automation on AWS and GCP">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Florian Rumiel | AI Solutions Architect">
+    <meta property="og:description" content="AI Solutions Architect specializing in enterprise-scale AI solutions, RAG systems, and cloud infrastructure automation">
+    <meta property="og:url" content="https://florian-rumiel.com">
+    <meta property="og:site_name" content="Florian Rumiel Portfolio">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Florian Rumiel | AI Solutions Architect">
+    <meta name="twitter:description" content="AI Solutions Architect specializing in enterprise-scale AI solutions, RAG systems, and cloud infrastructure automation">
+
+    <!-- Additional SEO -->
+    <meta name="author" content="Florian Rumiel">
+    <meta name="keywords" content="AI Solutions Architect, RAG Systems, LLM Orchestration, AWS Bedrock, Google Vertex AI, Cloud Architecture, Terraform, Python, Machine Learning">
+    <link rel="canonical" href="https://florian-rumiel.com">
 
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico">
@@ -23,31 +40,97 @@
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/stats.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
     <link rel="stylesheet" href="assets/css/animations.css">
 
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Florian Rumiel",
+      "jobTitle": "AI Solutions Architect",
+      "description": "AI Solutions Architect with 5+ years of experience in enterprise-scale AI solutions, RAG systems, LLM orchestration, and cloud infrastructure automation",
+      "url": "https://florian-rumiel.com",
+      "email": "rumiel.florian@gmail.com",
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "UQAC",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "CA"
+          }
+        }
+      ],
+      "knowsAbout": [
+        "AI Solutions Architecture",
+        "RAG Systems",
+        "LLM Orchestration",
+        "AWS Bedrock",
+        "Google Vertex AI",
+        "Cloud Architecture",
+        "Terraform",
+        "Python",
+        "LangChain",
+        "GraphRAG",
+        "Vector Databases"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "AWS Cloud Practitioner",
+          "credentialCategory": "Professional Certification"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Terraform Associate",
+          "credentialCategory": "Professional Certification"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "AWS Generative AI Essentials Partner",
+          "credentialCategory": "Professional Certification"
+        }
+      ],
+      "sameAs": [
+        "https://linkedin.com/in/florian-rumiel",
+        "https://github.com/FloRul"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Levio"
+      }
+    }
+    </script>
 </head>
 
 <body>
+    <!-- Skip Navigation for Accessibility -->
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+
     <!-- Animated Background -->
-    <div class="bg-scroll-wrapper">
+    <div class="bg-scroll-wrapper" aria-hidden="true">
         <div class="bg-scroll"></div>
     </div>
-    <div class="bg-overlay"></div>
+    <div class="bg-overlay" aria-hidden="true"></div>
 
     <!-- Tech Icons Background -->
-    <div class="tech-icons-bg" id="techIconsBackground"></div>
+    <div class="tech-icons-bg" id="techIconsBackground" aria-hidden="true"></div>
 
     <!-- Header and Navigation -->
-    <header class="header">
+    <header class="header" role="banner">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <a href="#hero"><span class="primary-color">F</span>lorian<span
+                    <a href="#hero" aria-label="Florian Rumiel - Home"><span class="primary-color">F</span>lorian<span
                             class="primary-color">R</span>umiel</a>
                 </div>
-                <nav class="main-nav">
+                <nav class="main-nav" role="navigation" aria-label="Main navigation">
                     <ul class="nav-list">
                         <li><a href="#about" class="nav-link">About</a></li>
                         <li><a href="#experience" class="nav-link">Experience</a></li>
@@ -56,6 +139,9 @@
                         <li><a href="#contact" class="nav-link">Contact</a></li>
                     </ul>
                 </nav>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
                 <div class="hamburger">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -66,6 +152,7 @@
     </header>
 
     <!-- Hero Section -->
+    <main id="main-content">
     <section id="hero" class="hero">
         <div class="container">
             <div class="hero-content">
@@ -73,7 +160,7 @@
                     <span class="text-reveal">Florian Rumiel</span>
                 </h1>
                 <div class="hero-subtitle animate-up">
-                    <span class="typed-text">Fullstack developer</span>
+                    <span class="typed-text">AI Solutions Architect</span>
                 </div>
                 <div class="hero-cta animate-up">
                     <a href="#contact" class="btn btn-primary">Get In Touch</a>
@@ -114,14 +201,8 @@
                     </div>
                 </div> -->
                 <div class="about-text" data-aos="fade-left">
-                    <p class="lead">I'm a <span class="highlight">Fullstack developer</span> with expertise in AWS,
-                        Terraform, and LLM technologies.</p>
-                    <p>Experienced in designing and implementing cloud-based solutions using AWS, Terraform, and AI
-                        orchestration technologies.
-                        Skilled in DevOps practices, infrastructure as code, and LLM integration. My experience spans
-                        from
-                        deploying conversational bots using RAG techniques to optimizing language model orchestration in
-                        enterprise environments.</p>
+                    <p class="lead">I'm an <span class="highlight">AI Solutions Architect</span> with 5+ years of experience designing and implementing enterprise-scale AI solutions.</p>
+                    <p>Specialized in LLM orchestration, RAG systems, and cloud infrastructure automation. I have a proven track record of delivering multi-million dollar modernization projects and optimizing AI systems for production environments. My expertise spans from architecting intelligent RAG-based chatbots to implementing agentic AI solutions for real estate and documentation automation using AWS Bedrock, Google Vertex AI, and cutting-edge orchestration frameworks.</p>
                     <div class="personal-info">
                         <div class="info-item">
                             <span class="info-title">Email:</span>
@@ -141,6 +222,42 @@
         </div>
     </section>
 
+    <!-- Statistics Section -->
+    <section id="stats" class="stats section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="0">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Years of Experience</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Enterprise Projects</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="stat-number">8+</div>
+                    <div class="stat-label">AI Systems Deployed</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Professional Certifications</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Experience Section -->
     <section id="experience" class="experience section">
         <div class="container">
@@ -152,13 +269,13 @@
                 <!-- Experience Item 1 -->
                 <div class="timeline-item" data-aos="fade-up">
                     <div class="timeline-content">
-                        <div class="date">2024 - Present</div>
-                        <h3>Senior Developer</h3>
-                        <h4>Levio Conseils inc. - Desjardins, Quebec</h4>
+                        <div class="date">2025</div>
+                        <h3>AI Solutions Architect</h3>
+                        <h4>Levio Conseils inc., Quebec</h4>
                         <ul>
-                            <li>Involved in the design of the global realization strategy for a multi-million dollars
-                                modernization solution</li>
-                            <li>Implementation of pipelines to deploy API documentation websites</li>
+                            <li>Architected enterprise-grade documentation automation solution leveraging Google Vertex AI and ADK, streamlining knowledge management workflows across multiple business units</li>
+                            <li>Engineered GraphRAG integration with internal document management systems and codebases, enabling intelligent retrieval and contextualized responses from organizational knowledge bases</li>
+                            <li>Automated AI service deployment pipelines using Terraform and GitHub Actions, reducing deployment time by implementing infrastructure-as-code best practices</li>
                         </ul>
                     </div>
                 </div>
@@ -166,13 +283,12 @@
                 <!-- Experience Item 2 -->
                 <div class="timeline-item" data-aos="fade-up">
                     <div class="timeline-content">
-                        <div class="date">2024 - Present</div>
-                        <h3>Cloud Developer</h3>
-                        <h4>Levio Conseils inc. - Legal department, Quebec</h4>
+                        <div class="date">2025</div>
+                        <h3>AI Solutions Architect</h3>
+                        <h4>Levio Conseils inc. - Desjardins, Quebec</h4>
                         <ul>
-                            <li>Integrated website change detection system into company cloud infrastructure</li>
-                            <li>Managed authentication integration with Cognito and Flutter</li>
-                            <li>Created and optimized Azure and AWS deployment pipelines</li>
+                            <li>Designed and deployed autonomous agentic AI solution for real estate division using Google Vertex AI and ADK, automating customer interactions and inquiry processing to enhance seller productivity</li>
+                            <li>Orchestrated seamless integration of AI agent tools with enterprise systems and databases, enabling real-time data access and automated transaction workflows</li>
                         </ul>
                     </div>
                 </div>
@@ -180,16 +296,12 @@
                 <!-- Experience Item 3 -->
                 <div class="timeline-item" data-aos="fade-up">
                     <div class="timeline-content">
-                        <div class="date">2024</div>
-                        <h3>Cloud Developer - AI Orchestration</h3>
-                        <h4>Levio Conseils inc. - Ministry of Cybersecurity and Digital Technology (MCN), Quebec</h4>
+                        <div class="date">2024 - 2025</div>
+                        <h3>Senior Developer</h3>
+                        <h4>Levio Conseils inc. - Desjardins, Quebec</h4>
                         <ul>
-                            <li>Developed inference orchestration algorithm for RAG-based chatbot</li>
-                            <li>Designed and optimized language model orchestration in AWS LZA environment</li>
-                            <li>Trained production support teams on orchestration system maintenance</li>
-                            <li>Researched and implemented techniques to reduce latency and improve response quality
-                            </li>
-                            <li>Created test benches for conversational bot performance monitoring</li>
+                            <li>Led strategic design and architecture planning for multi-million dollar enterprise modernization initiative, defining technical roadmaps and implementation strategies</li>
+                            <li>Developed and deployed automated CI/CD pipelines for API documentation websites, improving developer experience and reducing manual documentation efforts</li>
                         </ul>
                     </div>
                 </div>
@@ -197,12 +309,13 @@
                 <!-- Experience Item 4 -->
                 <div class="timeline-item" data-aos="fade-up">
                     <div class="timeline-content">
-                        <div class="date">2023 - 2024</div>
-                        <h3>Developer</h3>
-                        <h4>Ministry of Natural Resources and Forests (MRNF), Quebec</h4>
+                        <div class="date">2024 - 2025</div>
+                        <h3>Cloud Developer</h3>
+                        <h4>Levio Conseils inc. - Legal Department, Quebec</h4>
                         <ul>
-                            <li>Updated UI components for land registry system</li>
-                            <li>Analyzed existing codebase and provided optimization recommendations</li>
+                            <li>Implemented automated website change detection system integrated with enterprise cloud infrastructure, enabling proactive monitoring of legal and compliance content updates</li>
+                            <li>Engineered secure authentication solution using AWS Cognito and Flutter mobile framework, ensuring seamless cross-platform user experience</li>
+                            <li>Optimized multi-cloud deployment pipelines across Azure and AWS environments, enhancing deployment reliability and reducing infrastructure costs</li>
                         </ul>
                     </div>
                 </div>
@@ -210,14 +323,15 @@
                 <!-- Experience Item 5 -->
                 <div class="timeline-item" data-aos="fade-up">
                     <div class="timeline-content">
-                        <div class="date">2022 - 2023</div>
-                        <h3>DevOps Analyst</h3>
-                        <h4>Ministry of Justice of Quebec (MJQ), Quebec</h4>
+                        <div class="date">2024</div>
+                        <h3>Cloud Developer - AI Orchestration</h3>
+                        <h4>Levio Conseils inc. - Ministry of Cybersecurity and Digital Technology (MCN), Quebec</h4>
                         <ul>
-                            <li>Configuration, deployment, and management of cloud resources on Azure</li>
-                            <li>Performance analysis using Azure monitoring and logging tools</li>
-                            <li>Development of a pipeline variable analysis and optimization tool</li>
-                            <li>Configuration of access control and deployment policies</li>
+                            <li>Collaborated with Amazon AI experts to architect and implement advanced inference orchestration algorithms for production RAG-based chatbot leveraging AWS Bedrock foundation models</li>
+                            <li>Optimized high-throughput data ingestion pipeline using LangChain and PostgreSQL vector database, improving knowledge base indexing efficiency and retrieval accuracy</li>
+                            <li>Delivered comprehensive training programs to production support teams, ensuring smooth system maintenance and operational excellence</li>
+                            <li>Conducted performance research and implemented optimization techniques, significantly reducing response latency while enhancing answer quality and relevance</li>
+                            <li>Established automated performance monitoring infrastructure using Langfuse, enabling continuous quality assessment and model performance tracking</li>
                         </ul>
                     </div>
                 </div>
@@ -225,13 +339,12 @@
                 <!-- Experience Item 6 -->
                 <div class="timeline-item" data-aos="fade-up">
                     <div class="timeline-content">
-                        <div class="date">2020 - 2022</div>
-                        <h3>Fullstack Developer</h3>
-                        <h4>Noovelia</h4>
+                        <div class="date">2023 - 2024</div>
+                        <h3>Developer</h3>
+                        <h4>Ministry of Natural Resources and Forests (MRNF), Quebec</h4>
                         <ul>
-                            <li>Developed and maintained inventory management system in C# .NET</li>
-                            <li>Reduced frontend codebase by 40% through refactoring</li>
-                            <li>Enhanced UI/UX and maintained REST APIs in microservices architecture</li>
+                            <li>Modernized UI components for critical land registry system, enhancing user experience and accessibility</li>
+                            <li>Conducted comprehensive codebase analysis and delivered actionable optimization recommendations to improve system performance and maintainability</li>
                         </ul>
                     </div>
                 </div>
@@ -239,12 +352,41 @@
                 <!-- Experience Item 7 -->
                 <div class="timeline-item" data-aos="fade-up">
                     <div class="timeline-content">
+                        <div class="date">2022 - 2023</div>
+                        <h3>DevOps Analyst</h3>
+                        <h4>Levio Conseils inc. - Ministry of Justice of Quebec (MJQ), Quebec</h4>
+                        <ul>
+                            <li>Architected, deployed, and managed enterprise cloud infrastructure on Azure, ensuring high availability and compliance with government security standards</li>
+                            <li>Implemented comprehensive performance monitoring and analysis framework using Azure Application Insights and Log Analytics, enabling proactive issue detection</li>
+                            <li>Engineered custom pipeline optimization tool for variable analysis, improving CI/CD efficiency and reducing configuration complexity</li>
+                            <li>Established role-based access control (RBAC) policies and secure deployment workflows, strengthening infrastructure security posture</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 8 -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <div class="date">2020 - 2022</div>
+                        <h3>Fullstack Developer</h3>
+                        <h4>Noovelia</h4>
+                        <ul>
+                            <li>Developed and maintained enterprise inventory management system in C# .NET, streamlining warehouse operations and stock tracking</li>
+                            <li>Reduced frontend codebase by 40% through strategic refactoring, improving maintainability and reducing technical debt</li>
+                            <li>Enhanced UI/UX and maintained REST APIs in microservices architecture, delivering responsive and scalable solutions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 9 -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content">
                         <div class="date">2018 - 2020</div>
                         <h3>IT Analyst</h3>
                         <h4>Government of Canada</h4>
                         <ul>
-                            <li>Bilingual technical support for federal employees</li>
-                            <li>Diagnosis and resolution of hardware and software issues</li>
+                            <li>Delivered bilingual technical support to federal employees, maintaining high satisfaction rates and rapid issue resolution</li>
+                            <li>Diagnosed and resolved complex hardware and software issues, ensuring minimal downtime and operational continuity</li>
                         </ul>
                     </div>
                 </div>
@@ -283,13 +425,13 @@
             </div>
 
             <div class="skill-categories">
-                <!-- Cloud Technologies -->
+                <!-- AI & ML -->
                 <div class="skill-category" data-aos="fade-up">
-                    <h3><i class="fas fa-cloud"></i> Cloud Technologies</h3>
+                    <h3><i class="fas fa-robot"></i> AI & Machine Learning</h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <div class="skill-info">
-                                <h4>AWS</h4>
+                                <h4>RAG Systems</h4>
                                 <div class="skill-progress">
                                     <div class="progress" style="width: 95%"></div>
                                 </div>
@@ -297,7 +439,7 @@
                         </div>
                         <div class="skill-item">
                             <div class="skill-info">
-                                <h4>Terraform</h4>
+                                <h4>AWS Bedrock</h4>
                                 <div class="skill-progress">
                                     <div class="progress" style="width: 90%"></div>
                                 </div>
@@ -305,27 +447,12 @@
                         </div>
                         <div class="skill-item">
                             <div class="skill-info">
-                                <h4>AWS Bedrock</h4>
+                                <h4>Google Vertex AI</h4>
                                 <div class="skill-progress">
-                                    <div class="progress" style="width: 85%"></div>
+                                    <div class="progress" style="width: 90%"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <h4>Docker</h4>
-                                <div class="skill-progress">
-                                    <div class="progress" style="width: 80%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- AI Orchestration -->
-                <div class="skill-category" data-aos="fade-up">
-                    <h3><i class="fas fa-robot"></i> AI Orchestration</h3>
-                    <div class="skill-items">
                         <div class="skill-item">
                             <div class="skill-info">
                                 <h4>LangChain</h4>
@@ -344,7 +471,62 @@
                         </div>
                         <div class="skill-item">
                             <div class="skill-info">
-                                <h4>Haystack 2</h4>
+                                <h4>GraphRAG & Neo4J</h4>
+                                <div class="skill-progress">
+                                    <div class="progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>Vector DBs (PGVector, ChromaDB, FAISS)</h4>
+                                <div class="skill-progress">
+                                    <div class="progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>Langfuse & FMEval</h4>
+                                <div class="skill-progress">
+                                    <div class="progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud Technologies -->
+                <div class="skill-category" data-aos="fade-up">
+                    <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>AWS (Lambda, ECS, S3, EC2, Cognito)</h4>
+                                <div class="skill-progress">
+                                    <div class="progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>Terraform</h4>
+                                <div class="skill-progress">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>GCP (Google Cloud Platform)</h4>
+                                <div class="skill-progress">
+                                    <div class="progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>Azure</h4>
                                 <div class="skill-progress">
                                     <div class="progress" style="width: 80%"></div>
                                 </div>
@@ -352,9 +534,17 @@
                         </div>
                         <div class="skill-item">
                             <div class="skill-info">
-                                <h4>PGVector/ChromaDB/FAISS</h4>
+                                <h4>Docker</h4>
                                 <div class="skill-progress">
-                                    <div class="progress" style="width: 75%"></div>
+                                    <div class="progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <h4>CI/CD (GitHub Actions)</h4>
+                                <div class="skill-progress">
+                                    <div class="progress" style="width: 85%"></div>
                                 </div>
                             </div>
                         </div>
@@ -582,7 +772,12 @@
                     </div>
                 </div>
                 <div class="contact-form" data-aos="fade-left">
-                    <form id="contactForm">
+                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Replace with your actual Web3Forms Access Key -->
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                        <input type="hidden" name="subject" value="New Contact Form Submission from Portfolio">
+                        <input type="hidden" name="from_name" value="Portfolio Contact Form">
+
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
@@ -599,15 +794,22 @@
                             <label for="message">Message</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <div class="h-captcha" data-captcha="true"></div>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display: none;">Sending...</span>
+                        </button>
+                        <div id="formStatus" class="form-status"></div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
+    </main>
+
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">

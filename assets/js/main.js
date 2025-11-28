@@ -8,6 +8,9 @@ function setTechIconsSpeed(speedFactor)
 // Wait for DOM content to load
 document.addEventListener('DOMContentLoaded', function ()
 {
+    // Initialize dark mode
+    initDarkMode();
+
     // Create and manage tech icons background
     initTechIconsBackground();
 
@@ -128,24 +131,51 @@ document.addEventListener('DOMContentLoaded', function ()
     // Contact form submission
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
-        contactForm.addEventListener('submit', function (e)
+        contactForm.addEventListener('submit', async function (e)
         {
             e.preventDefault();
 
-            // Get form data
-            const name = this.querySelector('#name').value;
-            const email = this.querySelector('#email').value;
-            const subject = this.querySelector('#subject').value;
-            const message = this.querySelector('#message').value;
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const btnText = submitBtn.querySelector('.btn-text');
+            const btnLoading = submitBtn.querySelector('.btn-loading');
+            const formStatus = document.getElementById('formStatus');
 
-            // For demo purposes, log the data
-            console.log('Form submitted:', { name, email, subject, message });
+            // Show loading state
+            submitBtn.disabled = true;
+            btnText.style.display = 'none';
+            btnLoading.style.display = 'inline';
 
-            // Reset the form
-            this.reset();
+            try {
+                const formData = new FormData(this);
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                });
 
-            // Show success message
-            alert('Thank you for your message! I\'ll get back to you soon.');
+                const data = await response.json();
+
+                if (data.success) {
+                    formStatus.innerHTML = '<p class="success-message">Thank you! Your message has been sent successfully.</p>';
+                    formStatus.style.color = '#4CAF50';
+                    this.reset();
+                } else {
+                    throw new Error(data.message || 'Something went wrong');
+                }
+            } catch (error) {
+                console.error('Form submission error:', error);
+                formStatus.innerHTML = '<p class="error-message">Sorry, there was an error sending your message. Please try emailing me directly at rumiel.florian@gmail.com</p>';
+                formStatus.style.color = '#f44336';
+            } finally {
+                // Reset button state
+                submitBtn.disabled = false;
+                btnText.style.display = 'inline';
+                btnLoading.style.display = 'none';
+
+                // Clear status message after 5 seconds
+                setTimeout(() => {
+                    formStatus.innerHTML = '';
+                }, 5000);
+            }
         });
     }
 
@@ -154,10 +184,11 @@ document.addEventListener('DOMContentLoaded', function ()
     if (typedTextElement && typeof Typed !== 'undefined') {
         new Typed('.typed-text', {
             strings: [
-                'Cloud Architect',
-                'AI Orchestration Specialist',
-                'AWS & Terraform Expert',
-                'LLM Technologies Enthusiast'
+                'AI Solutions Architect',
+                'RAG Systems Expert',
+                'Google Vertex AI Specialist',
+                'LLM Orchestration Engineer',
+                'AWS Bedrock Developer'
             ],
             typeSpeed: 70,
             backSpeed: 40,
@@ -386,4 +417,39 @@ function setBackgroundSpeed(speedFactor)
 
     // Update the animation duration of the wrapper
     wrapper.style.animationDuration = `${newDuration}s`;
+}
+
+// Dark Mode Functionality
+function initDarkMode()
+{
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+    const icon = themeToggle.querySelector('i');
+
+    // Check for saved theme preference or default to 'light'
+    const currentTheme = localStorage.getItem('theme') || 'light';
+
+    // Apply the saved theme on page load
+    if (currentTheme === 'dark') {
+        body.classList.add('dark-mode');
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+    }
+
+    // Toggle dark mode on button click
+    themeToggle.addEventListener('click', () =>
+    {
+        body.classList.toggle('dark-mode');
+
+        // Update icon
+        if (body.classList.contains('dark-mode')) {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+            localStorage.setItem('theme', 'light');
+        }
+    });
 }
