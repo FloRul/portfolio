@@ -1,0 +1,117 @@
+﻿\documentclass[11pt,letterpaper]{article}
+
+% Basic packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tabularx}
+
+% Font selection - clean and professional font
+\usepackage{helvet} % Use Helvetica for the entire document
+\renewcommand{\familydefault}{\sfdefault} % Set sans-serif as the default font
+
+% Define colors
+\definecolor{primary}{RGB}{0, 90, 160}
+\definecolor{darkgray}{RGB}{80, 80, 80}
+
+% Configure sections
+\titleformat{\section}
+  {\Large\bfseries\color{primary}}
+  {}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{8pt}
+
+% Configure subsections
+\titleformat{\subsection}
+  {\bfseries\color{darkgray}}
+  {}{0em}{}
+\titlespacing*{\subsection}{0pt}{8pt}{4pt}
+
+% Remove paragraph indentation
+\setlength{\parindent}{0pt}
+
+% Set up links
+\hypersetup{
+  colorlinks=true,
+  linkcolor=primary,
+  urlcolor=primary
+}
+
+% Define custom list environments
+\setlist[itemize]{leftmargin=*}
+
+\begin{document}
+\begin{center}
+  {\LARGE\textbf{Florian Rumiel}} \\[0.3em]
+  {\large\textit{Generative AI Engineer}} \\[0.5em]
+  \begin{tabular}{r c l}
+    % Contact details
+    \textit{Email:} & \href{mailto:rumiel.florian@gmail.com}{rumiel.florian@gmail.com} & \textit{Phone:} +418-905-3574 \\
+    \textit{LinkedIn:} & \href{https://linkedin.com/in/florian-rumiel}{linkedin.com/in/florian-rumiel} & \textit{GitHub:} \href{https://github.com/FloRul}{github.com/FloRul} \\
+    \textit{Website:} & \href{https://florian-rumiel.com}{florianrumiel.com} \\
+  \end{tabular}
+\end{center}
+
+\section*{Professional Summary}
+Generative AI Engineer with 5+ years of experience building production LLM systems, RAG pipelines, and agentic AI solutions. Expert in AWS Bedrock, Google Vertex AI, and vector database architectures. Track record of deploying enterprise AI solutions that automate workflows and enhance productivity.
+
+\section*{Technical Skills}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{GenAI:} & LLM Orchestration, RAG/GraphRAG, Agentic AI, AWS Bedrock, Google Vertex AI/ADK, LangChain, LlamaIndex, Haystack 2, Vector DBs (PGVector, ChromaDB, Neo4J), Langfuse, FMEval \\[0.2em]
+\textbf{Cloud:} & AWS, GCP, Terraform, Docker, CI/CD (GitHub Actions) \\[0.2em]
+\textbf{Dev:} & Python, C\#/.NET, Flutter \hfill \textbf{Certs:} AWS Cloud Practitioner, Terraform Associate \\[0.2em]
+\textbf{Languages:} & French (native), English (bilingual) \\
+\end{tabularx}
+
+\section*{Professional Experience}
+\textbf{AI Solutions Architect} \hfill 2025\\
+\textit{Levio / Desjardins, Quebec}
+\begin{itemize}[nosep]
+\item Architected enterprise documentation automation with Google Vertex AI and ADK, implementing GraphRAG for intelligent retrieval from codebases and knowledge bases
+\item Deployed autonomous agentic AI for real estate division, automating customer interactions with real-time enterprise system integration
+\item Automated AI deployment pipelines with Terraform and GitHub Actions
+\end{itemize}
+
+\textbf{GenAI Engineer} \hfill 2024\\
+\textit{Levio - Ministry of Cybersecurity and Digital (MCN), Quebec}
+\begin{itemize}[nosep]
+\item Built production RAG chatbot with AWS Bedrock in collaboration with Amazon AI experts; optimized inference orchestration and reduced response latency
+\item Developed high-throughput ingestion pipeline with LangChain and PGVector; established Langfuse monitoring for continuous quality assessment
+\item Trained production support teams on system maintenance and operations
+\end{itemize}
+
+\textbf{GenAI Engineer} \hfill 2023\\
+\textit{Levio, Quebec}
+\begin{itemize}[nosep]
+\item Architected RAG-based HR assistant using AWS Bedrock and LlamaIndex, automating employee policy inquiries
+\item Built evaluation framework with custom datasets and metrics for continuous chatbot improvement
+\end{itemize}
+
+\textbf{Cloud Developer} \hfill 2022 - 2024\\
+\textit{Levio, Quebec}
+\begin{itemize}[nosep]
+\item Led architecture planning for multi-million dollar enterprise modernization at Desjardins
+\item Deployed multi-cloud solutions (AWS/Azure) including authentication systems and automated monitoring
+\end{itemize}
+
+\textbf{Software Developer} \hfill 2018 - 2022\\
+\textit{Noovelia / Government of Canada}
+\begin{itemize}[nosep]
+\item Full-stack development in C\#/.NET; reduced frontend codebase by 40\% through refactoring
+\end{itemize}
+
+\section*{Education}
+\textbf{Bachelor in Applied Sciences} - Computer Science \hfill UQAC, 2018
+
+\section*{Projects \& Open Source}
+\begin{itemize}[nosep]
+\item Open source contributor to \textbf{Haystack 2} (AWS Bedrock integration for LLM tool calling)
+\item YCombinator applicant with automated data extraction project
+\item Built automated resume enrichment tool for assignment workflows
+\end{itemize}
+
+\end{document}
