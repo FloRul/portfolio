@@ -14,11 +14,21 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Install LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra latexmk
+
+      - name: Build Resume PDF
+        run: |
+          cd resume
+          latexmk -pdf resume.tex
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-          
+
       - name: Install dependencies
         run: |
           npm install -g html-minifier-terser clean-css-cli uglify-js
@@ -27,10 +37,10 @@ jobs:
         run: |
           # Minify HTML
           find . -name "*.html" -exec html-minifier-terser --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true -o {} {} \;
-          
+
           # Minify CSS
           find ./assets/css -name "*.css" -exec cleancss -o {} {} \;
-          
+
           # Minify JS
           find ./assets/js -name "*.js" -exec uglifyjs -o {} {} \;
 
