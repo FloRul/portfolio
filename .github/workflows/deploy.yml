@@ -31,15 +31,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm install -g html-minifier-terser clean-css-cli uglify-js
+          npm install -g html-minifier-terser uglify-js
 
       - name: Optimize assets
         run: |
           # Minify HTML
           find . -name "*.html" -exec html-minifier-terser --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true -o {} {} \;
-
-          # Minify CSS
-          find ./assets/css -name "*.css" -exec cleancss -o {} {} \;
 
           # Minify JS
           find ./assets/js -name "*.js" -exec uglifyjs -o {} {} \;
