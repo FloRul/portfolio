@@ -4,48 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Florian Rumiel | AI Solutions Architect</title>
+    <title>Florian Rumiel | Cloud Architect &mdash; GenAI Specialist</title>
     <meta name="description"
-        content="Florian Rumiel - AI Solutions Architect with 5+ years of experience in enterprise-scale AI solutions, RAG systems, LLM orchestration, and cloud infrastructure automation on AWS and GCP">
+        content="Florian Rumiel - Cloud Architect specializing in generative AI systems, RAG architectures, LLM orchestration, and cloud infrastructure automation on AWS and GCP">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Florian Rumiel | AI Solutions Architect">
-    <meta property="og:description" content="AI Solutions Architect specializing in enterprise-scale AI solutions, RAG systems, and cloud infrastructure automation">
+    <meta property="og:title" content="Florian Rumiel | Cloud Architect &mdash; GenAI Specialist">
+    <meta property="og:description"
+        content="Cloud Architect specializing in generative AI systems, RAG architectures, and cloud infrastructure automation">
     <meta property="og:url" content="https://florian-rumiel.com">
     <meta property="og:site_name" content="Florian Rumiel Portfolio">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Florian Rumiel | AI Solutions Architect">
-    <meta name="twitter:description" content="AI Solutions Architect specializing in enterprise-scale AI solutions, RAG systems, and cloud infrastructure automation">
+    <meta name="twitter:title" content="Florian Rumiel | Cloud Architect &mdash; GenAI Specialist">
+    <meta name="twitter:description"
+        content="Cloud Architect specializing in generative AI systems, RAG architectures, and cloud infrastructure automation">
 
     <!-- Additional SEO -->
     <meta name="author" content="Florian Rumiel">
-    <meta name="keywords" content="AI Solutions Architect, RAG Systems, LLM Orchestration, AWS Bedrock, Google Vertex AI, Cloud Architecture, Terraform, Python, Machine Learning">
+    <meta name="keywords"
+        content="Cloud Architect, GenAI, RAG Systems, LLM Orchestration, AWS Bedrock, Google Vertex AI, Terraform, Python, LangChain, GraphRAG">
     <link rel="canonical" href="https://florian-rumiel.com">
 
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Work+Sans:wght@300;400;500&display=swap"
         rel="stylesheet">
-
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/stats.css">
-    <link rel="stylesheet" href="assets/css/dark-mode.css">
-    <link rel="stylesheet" href="assets/css/animations.css">
-
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -53,8 +44,8 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Florian Rumiel",
-      "jobTitle": "AI Solutions Architect",
-      "description": "AI Solutions Architect with 5+ years of experience in enterprise-scale AI solutions, RAG systems, LLM orchestration, and cloud infrastructure automation",
+      "jobTitle": "Cloud Architect - GenAI Specialist",
+      "description": "Cloud Architect specializing in generative AI systems, RAG architectures, LLM orchestration, and cloud infrastructure automation",
       "url": "https://florian-rumiel.com",
       "email": "rumiel.florian@gmail.com",
       "alumniOf": [
@@ -68,12 +59,12 @@
         }
       ],
       "knowsAbout": [
-        "AI Solutions Architecture",
+        "Cloud Architecture",
+        "Generative AI",
         "RAG Systems",
         "LLM Orchestration",
         "AWS Bedrock",
         "Google Vertex AI",
-        "Cloud Architecture",
         "Terraform",
         "Python",
         "LangChain",
@@ -90,11 +81,6 @@
           "@type": "EducationalOccupationalCredential",
           "name": "Terraform Associate",
           "credentialCategory": "Professional Certification"
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "AWS Generative AI Essentials Partner",
-          "credentialCategory": "Professional Certification"
         }
       ],
       "sameAs": [
@@ -107,753 +93,1683 @@
       }
     }
     </script>
+
+    <style>
+        /* ============================================
+           FLORIAN RUMIEL -- PORTFOLIO
+           ============================================
+           Structure: Architectural Drawing system
+           Background: Wireframe dotted canvas
+           Colors: Knolling palette (rust, kraft, ink)
+           ============================================ */
+
+        :root {
+            /* KNOLLING COLORS -- Surfaces */
+            --surface-white: #FFFFFF;
+            --surface-paper: #FAFAF8;
+            --surface-kraft: #F5F3EE;
+            --surface-linen: #EDEBE6;
+            --surface-concrete: #E5E3DE;
+
+            /* KNOLLING COLORS -- Shadows */
+            --shadow-light: #D8D6D1;
+            --shadow-medium: #C4C2BD;
+            --shadow-dark: #9E9C97;
+
+            /* KNOLLING COLORS -- Ink */
+            --ink-black: #1A1918;
+            --ink-dark: #2D2C2A;
+            --ink-medium: #5C5A56;
+            --ink-light: #8A8884;
+            --ink-muted: #B5B3AE;
+
+            /* KNOLLING COLORS -- Accent */
+            --accent-rust: #C4572A;
+            --accent-rust-light: #D97B52;
+            --accent-rust-dark: #9E4520;
+
+            /* KNOLLING COLORS -- Secondary */
+            --accent-slate: #5B6B73;
+            --accent-olive: #6B7355;
+
+            /* ARCHITECTURAL DRAWING -- Hatching */
+            --hatch-color: rgba(26, 25, 24, 0.10);
+            --hatch-heavy: rgba(26, 25, 24, 0.20);
+
+            /* ARCHITECTURAL DRAWING -- Line weights */
+            --weight-hairline: 0.5px;
+            --weight-thin: 1px;
+            --weight-medium: 2px;
+            --weight-bold: 3px;
+            --weight-profile: 4px;
+
+            /* ARCHITECTURAL DRAWING -- Typography */
+            --font-heading: 'Barlow', 'Helvetica Neue', sans-serif;
+            --font-body: 'Work Sans', 'Helvetica', sans-serif;
+            --font-mono: 'IBM Plex Mono', 'Consolas', monospace;
+
+            /* Spacing (4px base) */
+            --space-1: 4px;
+            --space-2: 8px;
+            --space-3: 12px;
+            --space-4: 16px;
+            --space-5: 20px;
+            --space-6: 24px;
+            --space-7: 32px;
+            --space-8: 40px;
+            --space-9: 48px;
+            --space-10: 64px;
+
+            /* KNOLLING -- Object shadows */
+            --shadow-object:
+                0 1px 1px rgba(0, 0, 0, 0.04),
+                0 2px 4px rgba(0, 0, 0, 0.04),
+                0 4px 8px rgba(0, 0, 0, 0.04);
+            --shadow-object-hover:
+                0 2px 2px rgba(0, 0, 0, 0.04),
+                0 4px 8px rgba(0, 0, 0, 0.06),
+                0 8px 16px rgba(0, 0, 0, 0.06);
+        }
+
+        /* RESET */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+
+        /* WIREFRAME BACKGROUND -- dotted canvas */
+        body {
+            font-family: var(--font-body);
+            font-size: 0.875rem;
+            font-weight: 300;
+            line-height: 1.7;
+            color: var(--ink-dark);
+            background-color: var(--surface-linen);
+            background-image: radial-gradient(circle, var(--shadow-light) 1px, transparent 1px);
+            background-size: 20px 20px;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        ::selection {
+            background: var(--accent-rust);
+            color: var(--surface-white);
+        }
+
+        a {
+            color: var(--accent-rust);
+            text-decoration: none;
+            transition: color 0.15s ease;
+        }
+
+        a:hover {
+            color: var(--accent-rust-dark);
+        }
+
+        /* ============================================
+           DRAWING FRAME (Architectural)
+           ============================================ */
+        .page-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--surface-paper);
+        }
+
+        .drawing-frame {
+            margin: var(--space-4);
+            position: relative;
+        }
+
+        /* ============================================
+           HEADER
+           ============================================ */
+        .site-header {
+            position: relative;
+            padding: var(--space-10) var(--space-7) var(--space-8);
+            border-bottom: var(--weight-medium) solid var(--ink-black);
+            background:
+                linear-gradient(var(--shadow-light) var(--weight-hairline), transparent var(--weight-hairline)),
+                linear-gradient(90deg, var(--shadow-light) var(--weight-hairline), transparent var(--weight-hairline)),
+                var(--surface-paper);
+            background-size: 20px 20px, 20px 20px, 100% 100%;
+        }
+
+        .site-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            border-left: var(--weight-hairline) dashed var(--accent-rust);
+            opacity: 0.25;
+        }
+
+        .site-header::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            border-top: var(--weight-hairline) dashed var(--accent-rust);
+            opacity: 0.25;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .site-header h1 {
+            font-family: var(--font-heading);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 300;
+            color: var(--ink-black);
+            text-transform: uppercase;
+            letter-spacing: 0.35em;
+            margin-bottom: var(--space-3);
+            line-height: 1;
+        }
+
+        .site-header .tagline {
+            font-family: var(--font-mono);
+            font-size: 0.6875rem;
+            color: var(--ink-light);
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            margin-bottom: var(--space-6);
+        }
+
+        .header-meta {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-4);
+            font-family: var(--font-mono);
+            font-size: 0.625rem;
+            color: var(--ink-medium);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            border: var(--weight-thin) solid var(--ink-light);
+            padding: var(--space-2) var(--space-4);
+            background: var(--surface-paper);
+            flex-wrap: wrap;
+        }
+
+        .header-meta a {
+            color: var(--ink-medium);
+        }
+
+        .header-meta a:hover {
+            color: var(--accent-rust);
+        }
+
+        .header-meta span {
+            padding-right: var(--space-4);
+            border-right: var(--weight-hairline) solid var(--ink-light);
+        }
+
+        .header-meta span:last-child {
+            padding-right: 0;
+            border-right: none;
+        }
+
+        /* ============================================
+           NAVIGATION
+           ============================================ */
+        .nav-bar {
+            display: flex;
+            flex-wrap: wrap;
+            border-bottom: var(--weight-medium) solid var(--ink-black);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: var(--surface-paper);
+        }
+
+        .nav-bar a {
+            flex: 1 1 auto;
+            padding: var(--space-4) var(--space-5);
+            font-family: var(--font-heading);
+            font-size: 0.6875rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--ink-medium);
+            text-decoration: none;
+            text-align: center;
+            border-right: var(--weight-hairline) solid var(--shadow-light);
+            transition: all 0.15s ease;
+            position: relative;
+        }
+
+        .nav-bar a:last-child {
+            border-right: none;
+        }
+
+        .nav-bar a:hover {
+            background: var(--ink-black);
+            color: var(--surface-paper);
+        }
+
+        .nav-bar a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 0;
+            background: var(--accent-rust);
+            transition: height 0.15s ease;
+        }
+
+        .nav-bar a:hover::after {
+            height: 2px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-bar a {
+                flex: 1 1 33.33%;
+                padding: var(--space-3);
+                font-size: 0.5625rem;
+            }
+        }
+
+        /* ============================================
+           SECTIONS
+           ============================================ */
+        .section {
+            padding: var(--space-9) var(--space-7);
+            border-bottom: var(--weight-thin) solid var(--ink-medium);
+            position: relative;
+            background: var(--surface-paper);
+        }
+
+        .section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 24px;
+            height: 100%;
+            background-image: repeating-linear-gradient(45deg, transparent, transparent 3px, var(--hatch-color) 3px, var(--hatch-color) 4px);
+            border-right: var(--weight-thin) solid var(--shadow-light);
+        }
+
+        .section::after {
+            content: '';
+            position: absolute;
+            top: var(--space-6);
+            left: 6px;
+            width: 12px;
+            height: 12px;
+            background: var(--surface-paper);
+            border: var(--weight-thin) solid var(--ink-medium);
+            border-radius: 50%;
+        }
+
+        .section-header {
+            margin-bottom: var(--space-7);
+            padding-bottom: var(--space-5);
+            border-bottom: var(--weight-hairline) solid var(--shadow-light);
+            padding-left: var(--space-4);
+        }
+
+        .section-number {
+            font-family: var(--font-mono);
+            font-size: 0.5625rem;
+            color: var(--accent-rust);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            display: block;
+            margin-bottom: var(--space-1);
+        }
+
+        .section-number::before {
+            content: 'DWG ';
+            color: var(--ink-muted);
+        }
+
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: 1.375rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--ink-black);
+            margin-bottom: var(--space-2);
+        }
+
+        .section-description {
+            font-size: 0.8125rem;
+            font-weight: 300;
+            color: var(--ink-medium);
+            max-width: 680px;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: var(--space-7) var(--space-4) var(--space-7) var(--space-8);
+            }
+        }
+
+        /* ============================================
+           TYPOGRAPHY
+           ============================================ */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            font-weight: 300;
+            line-height: 1.3;
+            color: var(--ink-black);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            letter-spacing: 0.15em;
+        }
+
+        h3 {
+            font-size: 1.125rem;
+            letter-spacing: 0.12em;
+        }
+
+        h4 {
+            font-size: 0.9375rem;
+            letter-spacing: 0.1em;
+            font-weight: 400;
+        }
+
+        p {
+            margin-bottom: var(--space-4);
+        }
+
+        .text-mono {
+            font-family: var(--font-mono);
+        }
+
+        /* ============================================
+           DIMENSION LINES
+           ============================================ */
+        .dimension {
+            display: flex;
+            align-items: center;
+            color: var(--ink-medium);
+            font-family: var(--font-mono);
+            font-size: 0.625rem;
+            padding: var(--space-2) 0;
+        }
+
+        .dimension::before,
+        .dimension::after {
+            content: '';
+            flex: 1;
+            height: var(--weight-hairline);
+            background: var(--ink-medium);
+        }
+
+        .dimension::before {
+            margin-right: var(--space-2);
+        }
+
+        .dimension::after {
+            margin-left: var(--space-2);
+        }
+
+        .dimension-value {
+            white-space: nowrap;
+            padding: 0 var(--space-2);
+            background: var(--surface-paper);
+        }
+
+        /* ============================================
+           BADGES (Knolling-styled)
+           ============================================ */
+        .badge {
+            font-family: var(--font-mono);
+            font-size: 0.5625rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: var(--space-1) var(--space-3);
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-1);
+            background: var(--surface-white);
+            border: 1px solid var(--shadow-light);
+            color: var(--ink-medium);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+        }
+
+        .badge-accent {
+            background: var(--accent-rust);
+            border-color: var(--accent-rust-dark);
+            color: var(--surface-white);
+        }
+
+        .badge-dark {
+            background: var(--ink-black);
+            border-color: var(--ink-black);
+            color: var(--surface-white);
+        }
+
+        .badge-kraft {
+            background: var(--surface-kraft);
+            border-color: var(--shadow-light);
+        }
+
+        .badge-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-2);
+        }
+
+        /* ============================================
+           CARDS (Knolling object style)
+           ============================================ */
+        .card {
+            background: var(--surface-white);
+            border: 1px solid var(--shadow-light);
+            box-shadow: var(--shadow-object);
+            transition: all 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-object-hover);
+        }
+
+        .card-header {
+            padding: var(--space-3) var(--space-5);
+            background: var(--surface-kraft);
+            border-bottom: 1px solid var(--shadow-light);
+            font-family: var(--font-heading);
+            font-size: 0.6875rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--ink-dark);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .card-body {
+            padding: var(--space-5);
+        }
+
+        .card-footer {
+            padding: var(--space-3) var(--space-5);
+            background: var(--surface-kraft);
+            border-top: var(--weight-hairline) solid var(--shadow-light);
+            font-family: var(--font-mono);
+            font-size: 0.625rem;
+            color: var(--ink-light);
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-6);
+        }
+
+        @media (max-width: 768px) {
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ============================================
+           BUTTONS
+           ============================================ */
+        .btn {
+            font-family: var(--font-heading);
+            font-size: 0.75rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            padding: var(--space-3) var(--space-6);
+            border: var(--weight-thin) solid var(--ink-black);
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-2);
+            text-decoration: none;
+            transition: all 0.15s ease;
+            background: var(--surface-paper);
+            color: var(--ink-dark);
+            box-shadow: var(--shadow-object);
+        }
+
+        .btn:hover {
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-object-hover);
+            color: var(--ink-dark);
+        }
+
+        .btn-primary {
+            background: var(--accent-rust);
+            border-color: var(--accent-rust-dark);
+            color: var(--surface-white);
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-rust-dark);
+            color: var(--surface-white);
+        }
+
+        .btn-dark {
+            background: var(--ink-black);
+            color: var(--surface-paper);
+            border-color: var(--ink-black);
+        }
+
+        .btn-dark:hover {
+            background: var(--ink-dark);
+            color: var(--surface-paper);
+        }
+
+        .btn-sm {
+            font-size: 0.625rem;
+            padding: var(--space-2) var(--space-4);
+        }
+
+        .button-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-4);
+        }
+
+        /* ============================================
+           EXPERIENCE TIMELINE
+           ============================================ */
+        .timeline {
+            position: relative;
+            padding-left: var(--space-7);
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: var(--weight-thin);
+            background: var(--shadow-medium);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: var(--space-7);
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: calc(-1 * var(--space-7) + 2px);
+            top: 4px;
+            width: 14px;
+            height: 14px;
+            background: var(--surface-paper);
+            border: var(--weight-medium) solid var(--accent-rust);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .timeline-date {
+            font-family: var(--font-mono);
+            font-size: 0.625rem;
+            color: var(--accent-rust);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-2);
+        }
+
+        .timeline-title {
+            font-family: var(--font-heading);
+            font-size: 1rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--ink-black);
+            margin-bottom: var(--space-1);
+        }
+
+        .timeline-company {
+            font-family: var(--font-mono);
+            font-size: 0.6875rem;
+            color: var(--ink-light);
+            margin-bottom: var(--space-3);
+        }
+
+        .timeline-body ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .timeline-body li {
+            position: relative;
+            padding-left: var(--space-4);
+            margin-bottom: var(--space-2);
+            font-size: 0.8125rem;
+            font-weight: 300;
+            color: var(--ink-medium);
+            line-height: 1.7;
+        }
+
+        .timeline-body li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 6px;
+            height: var(--weight-thin);
+            background: var(--accent-rust);
+        }
+
+        .timeline-tech {
+            margin-top: var(--space-3);
+        }
+
+        /* ============================================
+           SKILLS
+           ============================================ */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-6);
+        }
+
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .skill-category h4 {
+            font-family: var(--font-heading);
+            font-size: 0.8125rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--ink-black);
+            padding-bottom: var(--space-3);
+            margin-bottom: var(--space-4);
+            border-bottom: var(--weight-medium) solid var(--ink-black);
+        }
+
+        .skill-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skill-list li {
+            padding: var(--space-2) 0;
+            border-bottom: var(--weight-hairline) solid var(--shadow-light);
+            font-size: 0.8125rem;
+            font-weight: 300;
+            color: var(--ink-dark);
+        }
+
+        .skill-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* ============================================
+           CERTIFICATIONS
+           ============================================ */
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-4);
+        }
+
+        @media (max-width: 768px) {
+            .cert-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .cert-item {
+            background: var(--surface-white);
+            border: 1px solid var(--shadow-light);
+            padding: var(--space-4) var(--space-5);
+            box-shadow: var(--shadow-object);
+            display: flex;
+            align-items: center;
+            gap: var(--space-4);
+            transition: all 0.2s ease;
+        }
+
+        .cert-item:hover {
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-object-hover);
+        }
+
+        .cert-marker {
+            width: 28px;
+            height: 28px;
+            border: var(--weight-medium) solid var(--accent-rust);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            font-size: 0.625rem;
+            font-weight: 600;
+            color: var(--accent-rust);
+            flex-shrink: 0;
+        }
+
+        .cert-name {
+            font-family: var(--font-heading);
+            font-size: 0.75rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--ink-dark);
+        }
+
+        /* ============================================
+           PROJECTS
+           ============================================ */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-6);
+        }
+
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .project-card {
+            background: var(--surface-white);
+            border: 1px solid var(--shadow-light);
+            box-shadow: var(--shadow-object);
+            transition: all 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-object-hover);
+        }
+
+        .project-card-header {
+            padding: var(--space-3) var(--space-5);
+            background-image: repeating-linear-gradient(45deg, transparent, transparent 3px, var(--hatch-color) 3px, var(--hatch-color) 4px);
+            background-color: var(--surface-kraft);
+            border-bottom: var(--weight-medium) solid var(--ink-black);
+            font-family: var(--font-heading);
+            font-size: 0.8125rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--ink-black);
+        }
+
+        .project-card-body {
+            padding: var(--space-5);
+        }
+
+        .project-card-body p {
+            font-size: 0.8125rem;
+            font-weight: 300;
+            color: var(--ink-medium);
+            line-height: 1.7;
+            margin-bottom: var(--space-4);
+        }
+
+        .project-link {
+            font-family: var(--font-mono);
+            font-size: 0.625rem;
+            color: var(--accent-rust);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            text-decoration: none;
+            border-bottom: var(--weight-thin) solid var(--accent-rust);
+            padding-bottom: 2px;
+        }
+
+        .project-link:hover {
+            color: var(--accent-rust-dark);
+            border-color: var(--accent-rust-dark);
+        }
+
+        /* ============================================
+           EDUCATION
+           ============================================ */
+        .education-item {
+            display: flex;
+            gap: var(--space-5);
+            align-items: baseline;
+            padding: var(--space-4) 0;
+            border-bottom: var(--weight-hairline) solid var(--shadow-light);
+        }
+
+        .education-item:last-child {
+            border-bottom: none;
+        }
+
+        .edu-year {
+            font-family: var(--font-mono);
+            font-size: 0.6875rem;
+            color: var(--accent-rust);
+            min-width: 50px;
+            flex-shrink: 0;
+        }
+
+        .edu-title {
+            font-family: var(--font-heading);
+            font-size: 0.875rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--ink-dark);
+        }
+
+        .edu-detail {
+            font-size: 0.8125rem;
+            font-weight: 300;
+            color: var(--ink-medium);
+            margin-top: var(--space-1);
+        }
+
+        /* ============================================
+           CONTACT
+           ============================================ */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-7);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-4);
+            padding: var(--space-4);
+            background: var(--surface-white);
+            border: 1px solid var(--shadow-light);
+            box-shadow: var(--shadow-object);
+            transition: all 0.2s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-object-hover);
+        }
+
+        .contact-marker {
+            width: 32px;
+            height: 32px;
+            border: var(--weight-medium) solid var(--ink-black);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            font-size: 0.625rem;
+            font-weight: 600;
+            color: var(--ink-black);
+            flex-shrink: 0;
+        }
+
+        .contact-label {
+            font-family: var(--font-mono);
+            font-size: 0.5625rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--ink-light);
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .contact-value {
+            font-family: var(--font-body);
+            font-size: 0.8125rem;
+            color: var(--ink-dark);
+        }
+
+        .contact-value a {
+            color: var(--ink-dark);
+            border-bottom: var(--weight-hairline) solid var(--shadow-light);
+            padding-bottom: 1px;
+        }
+
+        .contact-value a:hover {
+            color: var(--accent-rust);
+            border-color: var(--accent-rust);
+        }
+
+        /* ============================================
+           TITLE BLOCK (Architectural)
+           ============================================ */
+        .title-block {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            border-top: var(--weight-medium) solid var(--ink-black);
+            font-family: var(--font-mono);
+            font-size: 0.6875rem;
+        }
+
+        .title-block-main {
+            padding: var(--space-4) var(--space-6);
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: var(--space-1);
+            border-right: var(--weight-thin) solid var(--ink-medium);
+        }
+
+        .title-block-info {
+            padding: var(--space-3) var(--space-4);
+            min-width: 200px;
+        }
+
+        .title-block-row {
+            display: flex;
+            justify-content: space-between;
+            padding: var(--space-1) 0;
+            border-bottom: var(--weight-hairline) solid var(--shadow-light);
+        }
+
+        .title-block-row:last-child {
+            border-bottom: none;
+        }
+
+        .title-block-label {
+            font-size: 0.5625rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--ink-light);
+        }
+
+        .title-block-value {
+            font-weight: 500;
+            color: var(--ink-dark);
+        }
+
+        @media (max-width: 768px) {
+            .title-block {
+                grid-template-columns: 1fr;
+            }
+
+            .title-block-main {
+                grid-template-columns: 1fr;
+                border-right: none;
+                border-bottom: var(--weight-thin) solid var(--ink-medium);
+            }
+        }
+
+        /* ============================================
+           FOOTER (Architectural)
+           ============================================ */
+        .site-footer {
+            padding: var(--space-7);
+            background: var(--surface-kraft);
+            border-top: var(--weight-medium) solid var(--ink-black);
+            position: relative;
+        }
+
+        .site-footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 20px;
+            background-image: repeating-linear-gradient(45deg, transparent, transparent 3px, var(--hatch-color) 3px, var(--hatch-color) 4px);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: var(--space-7);
+            align-items: end;
+            margin-top: var(--space-4);
+        }
+
+        .footer-logo {
+            font-family: var(--font-heading);
+            font-size: 1rem;
+            font-weight: 300;
+            color: var(--ink-dark);
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            margin-bottom: var(--space-2);
+        }
+
+        .site-footer p {
+            font-family: var(--font-mono);
+            font-size: 0.5625rem;
+            color: var(--ink-light);
+            margin-bottom: var(--space-1);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: var(--space-5);
+            margin-top: var(--space-3);
+        }
+
+        .footer-links a {
+            font-family: var(--font-mono);
+            font-size: 0.625rem;
+            color: var(--ink-medium);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            text-decoration: none;
+            border-bottom: var(--weight-hairline) solid var(--shadow-light);
+            padding-bottom: 2px;
+            transition: all 0.15s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-rust);
+            border-color: var(--accent-rust);
+        }
+
+        .footer-stamp {
+            text-align: right;
+            padding: var(--space-3) var(--space-5);
+            border: var(--weight-medium) solid var(--ink-black);
+            font-family: var(--font-heading);
+            font-size: 0.625rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--ink-dark);
+        }
+
+        .footer-stamp .stamp-status {
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            color: var(--accent-olive);
+            border: var(--weight-medium) solid var(--accent-olive);
+            padding: var(--space-1) var(--space-3);
+            display: inline-block;
+            margin-top: var(--space-2);
+            transform: rotate(-3deg);
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-stamp {
+                text-align: left;
+            }
+        }
+
+        /* ============================================
+           UTILITIES
+           ============================================ */
+        .mb-sm {
+            margin-bottom: var(--space-2);
+        }
+
+        .mb-md {
+            margin-bottom: var(--space-4);
+        }
+
+        .mb-lg {
+            margin-bottom: var(--space-6);
+        }
+
+        .mt-md {
+            margin-top: var(--space-4);
+        }
+
+        .mt-lg {
+            margin-top: var(--space-6);
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            gap: var(--space-4);
+            padding: var(--space-4) 0;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            height: var(--weight-hairline);
+            background: var(--shadow-light);
+        }
+
+        .divider-symbol {
+            font-family: var(--font-mono);
+            font-size: 0.5625rem;
+            color: var(--ink-light);
+            letter-spacing: 0.1em;
+        }
+
+        .content-pad {
+            padding-left: var(--space-4);
+        }
+
+        /* Skip nav for accessibility */
+        .skip-nav {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--ink-black);
+            color: var(--surface-white);
+            padding: var(--space-2) var(--space-4);
+            z-index: 1000;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+        }
+
+        .skip-nav:focus {
+            top: 0;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--surface-kraft);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--shadow-medium);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--shadow-dark);
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Skip Navigation for Accessibility -->
     <a href="#main-content" class="skip-nav">Skip to main content</a>
 
-    <!-- Animated Background -->
-    <div class="bg-scroll-wrapper" aria-hidden="true">
-        <div class="bg-scroll"></div>
-    </div>
-    <div class="bg-overlay" aria-hidden="true"></div>
+    <div class="page-wrapper">
+        <div class="drawing-frame">
 
-    <!-- Tech Icons Background -->
-    <div class="tech-icons-bg" id="techIconsBackground" aria-hidden="true"></div>
+            <!-- HEADER -->
+            <header class="site-header">
+                <div class="header-content">
+                    <h1>Florian Rumiel</h1>
+                    <p class="tagline">Cloud Architect // Generative AI Specialist</p>
+                    <div class="header-meta">
+                        <span><a href="mailto:rumiel.florian@gmail.com">rumiel.florian@gmail.com</a></span>
+                        <span><a href="https://linkedin.com/in/florian-rumiel" target="_blank"
+                                rel="noopener">LinkedIn</a></span>
+                        <span><a href="https://github.com/FloRul" target="_blank" rel="noopener">GitHub</a></span>
+                        <span><a href="https://florian-rumiel.com">florianrumiel.com</a></span>
+                    </div>
+                </div>
+            </header>
 
-    <!-- Header and Navigation -->
-    <header class="header" role="banner">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="#hero" aria-label="Florian Rumiel - Home"><span class="primary-color">F</span>lorian<span
-                            class="primary-color">R</span>umiel</a>
-                </div>
-                <nav class="main-nav" role="navigation" aria-label="Main navigation">
-                    <ul class="nav-list">
-                        <li><a href="#about" class="nav-link">About</a></li>
-                        <li><a href="#experience" class="nav-link">Experience</a></li>
-                        <li><a href="#skills" class="nav-link">Skills</a></li>
-                        <li><a href="#projects" class="nav-link">Projects</a></li>
-                        <li><a href="#contact" class="nav-link">Contact</a></li>
-                    </ul>
-                </nav>
-                <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </div>
-    </header>
+            <!-- NAVIGATION -->
+            <nav class="nav-bar" role="navigation" aria-label="Main navigation">
+                <a href="#summary">Summary</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </nav>
 
-    <!-- Hero Section -->
-    <main id="main-content">
-    <section id="hero" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="animate-text">
-                    <span class="text-reveal">Florian Rumiel</span>
-                </h1>
-                <div class="hero-subtitle animate-up">
-                    <span class="typed-text">AI Solutions Architect</span>
-                </div>
-                <div class="hero-cta animate-up">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#experience" class="btn btn-outline">See My Work</a>
-                </div>
-                <div class="social-links animate-up">
-                    <a href="https://linkedin.com/in/florian-rumiel" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/FloRul" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:rumiel.florian@gmail.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="scroll-down">
-                <a href="#about">
-                    <i class="fas fa-chevron-down"></i>
-                </a>
-            </div>
-        </div>
-    </section>
+            <!-- MAIN CONTENT -->
+            <main id="main-content">
 
-    <!-- About Section -->
-    <section id="about" class="about section">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>About Me</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="about-content">
-                <!-- <div class="about-image" data-aos="fade-right">
-                    <div class="image-container">
-                        <img src="assets/images/profile.jpg" alt="Florian Rumiel"
-                            onerror="this.src='https://media.licdn.com/dms/image/v2/C4D03AQFR-AXWwXAE4g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1576116946342?e=1746662400&v=beta&t=f6eegiB9a3-9H-YLm2WRuB5GhcFuV-oSEkcr3uC_Oqo'">
+                <!-- 01. PROFESSIONAL SUMMARY -->
+                <section class="section" id="summary">
+                    <div class="section-header">
+                        <span class="section-number">A-01</span>
+                        <h2 class="section-title">Professional Summary</h2>
                     </div>
-                </div> -->
-                <div class="about-text" data-aos="fade-left">
-                    <p class="lead">I'm an <span class="highlight">AI Solutions Architect</span> with 5+ years of experience designing and implementing enterprise-scale AI solutions.</p>
-                    <p>Specialized in LLM orchestration, RAG systems, and cloud infrastructure automation. I have a proven track record of delivering multi-million dollar modernization projects and optimizing AI systems for production environments. My expertise spans from architecting intelligent RAG-based chatbots to implementing agentic AI solutions for real estate and documentation automation using AWS Bedrock, Google Vertex AI, and cutting-edge orchestration frameworks.</p>
-                    <div class="personal-info">
-                        <div class="info-item">
-                            <span class="info-title">Email:</span>
-                            <span class="info-value">rumiel.florian@gmail.com</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-title">Languages:</span>
-                            <span class="info-value">French (native), English (bilingual)</span>
-                        </div>
-                    </div>
-                    <div class="cta-buttons">
-                        <a href="resume/resume.pdf" class="btn btn-primary" download>Download CV</a>
-                        <a href="#contact" class="btn btn-outline">Contact Me</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Statistics Section -->
-    <section id="stats" class="stats section">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item" data-aos="fade-up" data-aos-delay="0">
-                    <div class="stat-icon">
-                        <i class="fas fa-calendar-alt"></i>
-                    </div>
-                    <div class="stat-number">5+</div>
-                    <div class="stat-label">Years of Experience</div>
-                </div>
-                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="stat-icon">
-                        <i class="fas fa-project-diagram"></i>
-                    </div>
-                    <div class="stat-number">15+</div>
-                    <div class="stat-label">Enterprise Projects</div>
-                </div>
-                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="stat-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <div class="stat-number">8+</div>
-                    <div class="stat-label">AI Systems Deployed</div>
-                </div>
-                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="stat-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <div class="stat-number">3</div>
-                    <div class="stat-label">Professional Certifications</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience section">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>Professional Experience</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="timeline">
-                <!-- Experience Item 1 -->
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-content">
-                        <div class="date">2025</div>
-                        <h3>AI Solutions Architect</h3>
-                        <h4>Levio Conseils inc., Quebec</h4>
-                        <ul>
-                            <li>Architected enterprise-grade documentation automation solution leveraging Google Vertex AI and ADK, streamlining knowledge management workflows across multiple business units</li>
-                            <li>Engineered GraphRAG integration with internal document management systems and codebases, enabling intelligent retrieval and contextualized responses from organizational knowledge bases</li>
-                            <li>Automated AI service deployment pipelines using Terraform and GitHub Actions, reducing deployment time by implementing infrastructure-as-code best practices</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Experience Item 2 -->
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-content">
-                        <div class="date">2025</div>
-                        <h3>AI Solutions Architect</h3>
-                        <h4>Levio Conseils inc. - Desjardins, Quebec</h4>
-                        <ul>
-                            <li>Designed and deployed autonomous agentic AI solution for real estate division using Google Vertex AI and ADK, automating customer interactions and inquiry processing to enhance seller productivity</li>
-                            <li>Orchestrated seamless integration of AI agent tools with enterprise systems and databases, enabling real-time data access and automated transaction workflows</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Experience Item 3 -->
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-content">
-                        <div class="date">2024 - 2025</div>
-                        <h3>Senior Developer</h3>
-                        <h4>Levio Conseils inc. - Desjardins, Quebec</h4>
-                        <ul>
-                            <li>Led strategic design and architecture planning for multi-million dollar enterprise modernization initiative, defining technical roadmaps and implementation strategies</li>
-                            <li>Developed and deployed automated CI/CD pipelines for API documentation websites, improving developer experience and reducing manual documentation efforts</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Experience Item 4 -->
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-content">
-                        <div class="date">2024 - 2025</div>
-                        <h3>Cloud Developer</h3>
-                        <h4>Levio Conseils inc. - Legal Department, Quebec</h4>
-                        <ul>
-                            <li>Implemented automated website change detection system integrated with enterprise cloud infrastructure, enabling proactive monitoring of legal and compliance content updates</li>
-                            <li>Engineered secure authentication solution using AWS Cognito and Flutter mobile framework, ensuring seamless cross-platform user experience</li>
-                            <li>Optimized multi-cloud deployment pipelines across Azure and AWS environments, enhancing deployment reliability and reducing infrastructure costs</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Experience Item 5 -->
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-content">
-                        <div class="date">2024</div>
-                        <h3>Cloud Developer - AI Orchestration</h3>
-                        <h4>Levio Conseils inc. - Ministry of Cybersecurity and Digital Technology (MCN), Quebec</h4>
-                        <ul>
-                            <li>Collaborated with Amazon AI experts to architect and implement advanced inference orchestration algorithms for production RAG-based chatbot leveraging AWS Bedrock foundation models</li>
-                            <li>Optimized high-throughput data ingestion pipeline using LangChain and PostgreSQL vector database, improving knowledge base indexing efficiency and retrieval accuracy</li>
-                            <li>Delivered comprehensive training programs to production support teams, ensuring smooth system maintenance and operational excellence</li>
-                            <li>Conducted performance research and implemented optimization techniques, significantly reducing response latency while enhancing answer quality and relevance</li>
-                            <li>Established automated performance monitoring infrastructure using Langfuse, enabling continuous quality assessment and model performance tracking</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Experience Item 6 -->
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-content">
-                        <div class="date">2023 - 2024</div>
-                        <h3>Developer</h3>
-                        <h4>Ministry of Natural Resources and Forests (MRNF), Quebec</h4>
-                        <ul>
-                            <li>Modernized UI components for critical land registry system, enhancing user experience and accessibility</li>
-                            <li>Conducted comprehensive codebase analysis and delivered actionable optimization recommendations to improve system performance and maintainability</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Experience Item 7 -->
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-content">
-                        <div class="date">2022 - 2023</div>
-                        <h3>DevOps Analyst</h3>
-                        <h4>Levio Conseils inc. - Ministry of Justice of Quebec (MJQ), Quebec</h4>
-                        <ul>
-                            <li>Architected, deployed, and managed enterprise cloud infrastructure on Azure, ensuring high availability and compliance with government security standards</li>
-                            <li>Implemented comprehensive performance monitoring and analysis framework using Azure Application Insights and Log Analytics, enabling proactive issue detection</li>
-                            <li>Engineered custom pipeline optimization tool for variable analysis, improving CI/CD efficiency and reducing configuration complexity</li>
-                            <li>Established role-based access control (RBAC) policies and secure deployment workflows, strengthening infrastructure security posture</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Experience Item 8 -->
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-content">
-                        <div class="date">2020 - 2022</div>
-                        <h3>Fullstack Developer</h3>
-                        <h4>Noovelia</h4>
-                        <ul>
-                            <li>Developed and maintained enterprise inventory management system in C# .NET, streamlining warehouse operations and stock tracking</li>
-                            <li>Reduced frontend codebase by 40% through strategic refactoring, improving maintainability and reducing technical debt</li>
-                            <li>Enhanced UI/UX and maintained REST APIs in microservices architecture, delivering responsive and scalable solutions</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Experience Item 9 -->
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-content">
-                        <div class="date">2018 - 2020</div>
-                        <h3>IT Analyst</h3>
-                        <h4>Government of Canada</h4>
-                        <ul>
-                            <li>Delivered bilingual technical support to federal employees, maintaining high satisfaction rates and rapid issue resolution</li>
-                            <li>Diagnosed and resolved complex hardware and software issues, ensuring minimal downtime and operational continuity</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education section">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>Education</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="education-content">
-                <div class="education-item" data-aos="fade-up">
-                    <div class="edu-year">2017</div>
-                    <h3>Bachelor in applied sciences</h3>
-                    <p>UQAC - Major in Computer Science and Video Game Design</p>
-                </div>
-                <div class="education-item" data-aos="fade-up">
-                    <div class="edu-year">2017</div>
-                    <h3>Technology University Diploma</h3>
-                    <p>University of Burgundy - Computer Science</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>Skills & Expertise</h2>
-                <div class="underline"></div>
-            </div>
-
-            <div class="skill-categories">
-                <!-- AI & ML -->
-                <div class="skill-category" data-aos="fade-up">
-                    <h3><i class="fas fa-robot"></i> AI & Machine Learning</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <h4>RAG Systems</h4>
-                                <div class="skill-progress">
-                                    <div class="progress" style="width: 95%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <h4>AWS Bedrock</h4>
-                                <div class="skill-progress">
-                                    <div class="progress" style="width: 90%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <h4>Google Vertex AI</h4>
-                                <div class="skill-progress">
-                                    <div class="progress" style="width: 90%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <h4>LangChain</h4>
-                                <div class="skill-progress">
-                                    <div class="progress" style="width: 90%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <h4>LlamaIndex</h4>
-                                <div class="skill-progress">
-                                    <div class="progress" style="width: 85%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <h4>GraphRAG & Neo4J</h4>
-                                <div class="skill-progress">
-                                    <div class="progress" style="width: 85%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <h4>Vector DBs (PGVector, ChromaDB, FAISS)</h4>
-                                <div class="skill-progress">
-                                    <div class="progress" style="width: 85%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <h4>Langfuse & FMEval</h4>
-                                <div class="skill-progress">
-                                    <div class="progress" style="width: 80%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Cloud Technologies -->
-                <div class="skill-category" data-aos="fade-up">
-                    <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <h4>AWS (Lambda, ECS, S3, EC2, Cognito)</h4>
-                                <div class="skill-progress">
-                                    <div class="progress" style="width: 95%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <h4>Terraform</h4>
-                                <div class="skill-progress">
-                                    <div class="progress" style="width: 90%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <h4>GCP (Google Cloud Platform)</h4>
-                                <div class="skill-progress">
-                                    <div class="progress" style="width: 85%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <h4>Azure</h4>
-                                <div class="skill-progress">
-                                    <div class="progress" style="width: 80%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <h4>Docker</h4>
-                                <div class="skill-progress">
-                                    <div class="progress" style="width: 85%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <h4>CI/CD (GitHub Actions)</h4>
-                                <div class="skill-progress">
-                                    <div class="progress" style="width: 85%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Languages -->
-                <div class="skill-category" data-aos="fade-up">
-                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <h4>Python</h4>
-                                <div class="skill-progress">
-                                    <div class="progress" style="width: 95%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <h4>Dart/Flutter</h4>
-                                <div class="skill-progress">
-                                    <div class="progress" style="width: 85%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <h4>C#</h4>
-                                <div class="skill-progress">
-                                    <div class="progress" style="width: 80%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <h4>Terraform</h4>
-                                <div class="skill-progress">
-                                    <div class="progress" style="width: 90%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Certifications -->
-            <div class="certifications" data-aos="fade-up">
-                <h3>Certifications</h3>
-                <div class="cert-grid">
-                    <div class="cert-item">
-                        <div class="cert-icon">
-                            <i class="fab fa-aws"></i>
-                        </div>
-                        <h4>AWS Cloud Practitioner</h4>
-                    </div>
-                    <div class="cert-item">
-                        <div class="cert-icon">
-                            <i class="fab fa-aws"></i>
-                        </div>
-                        <h4>AWS Generative AI Essentials Partner</h4>
-                    </div>
-                    <div class="cert-item">
-                        <div class="cert-icon">
-                            <i class="fas fa-cloud-upload-alt"></i>
-                        </div>
-                        <h4>Terraform Associate</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects section">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>Personal Projects</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card" data-aos="fade-up">
-                    <div class="project-content">
-                        <h3>Portfolio & Resume Automation</h3>
-                        <p>Personal website content management automation integrated with resume data</p>
-                        <div class="tech-stack">
-                            <span>GitHub</span>
-                            <span>Automation</span>
-                            <span>Web Development</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/FloRul/portfolio" target="_blank" class="btn btn-sm">
-                                <i class="fab fa-github"></i> View on GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card" data-aos="fade-up">
-                    <div class="project-content">
-                        <h3>YCombinator Startup Project</h3>
-                        <p>Application to YCombinator's Startup School with a project to automate data extraction from
-                            various sources</p>
-                        <div class="tech-stack">
-                            <span>Entrepreneurship</span>
-                            <span>Data Extraction</span>
-                            <span>Automation</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card" data-aos="fade-up">
-                    <div class="project-content">
-                        <h3>RAG Solutions in AWS</h3>
-                        <p>Architecture and implementation of RAG (retrieval augmented generation) solutions in AWS for
-                            company HR agent</p>
-                        <div class="tech-stack">
-                            <span>AWS</span>
-                            <span>RAG</span>
-                            <span>LLM</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card" data-aos="fade-up">
-                    <div class="project-content">
-                        <h3>Game Server Management</h3>
-                        <p>Personal & friends video game servers deployment, management and backup automation with AWS
+                    <div class="content-pad">
+                        <p class="section-description">
+                            Cloud Architect specializing in generative AI systems, RAG architectures, and LLM
+                            orchestration. Experience designing and deploying production AI applications on AWS Bedrock
+                            and Google Vertex AI with Terraform and modern orchestration frameworks. Strong foundation in
+                            cloud infrastructure, vector databases, and DevOps practices. Open source contributor focused
+                            on advancing AI tooling ecosystems.
                         </p>
-                        <div class="tech-stack">
-                            <span>AWS</span>
-                            <span>Automation</span>
-                            <span>DevOps</span>
+                        <div class="badge-row mt-md">
+                            <span class="badge badge-accent">GenAI</span>
+                            <span class="badge badge-dark">AWS</span>
+                            <span class="badge badge-dark">GCP</span>
+                            <span class="badge">Terraform</span>
+                            <span class="badge">RAG / GraphRAG</span>
+                            <span class="badge">LLM Orchestration</span>
+                            <span class="badge badge-kraft">Open Source</span>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/FloRul/Satiserver" target="_blank" class="btn btn-sm">
-                                <i class="fab fa-github"></i> View on GitHub
-                            </a>
+                        <div class="button-row mt-lg">
+                            <a href="resume/resume.pdf" class="btn btn-primary" download>Download CV</a>
+                            <a href="#contact" class="btn">Contact Me</a>
                         </div>
+                    </div>
+                </section>
+
+                <!-- 02. PROFESSIONAL EXPERIENCE -->
+                <section class="section" id="experience">
+                    <div class="section-header">
+                        <span class="section-number">A-02</span>
+                        <h2 class="section-title">Professional Experience</h2>
+                    </div>
+                    <div class="content-pad">
+                        <div class="timeline">
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">Aug 2025 &mdash; Jan 2026</div>
+                                <div class="timeline-title">Cloud Architect &mdash; GenAI</div>
+                                <div class="timeline-company">Levio &mdash; Simons, Quebec</div>
+                                <div class="timeline-body">
+                                    <ul>
+                                        <li>Architected a multi-format document ingestion foundation for a RAG/GraphRAG
+                                            knowledge base system, supporting diverse file types including video and
+                                            legacy codebases (IBM i / AS400)</li>
+                                        <li>Designed extraction pipelines to surface business and functional knowledge
+                                            from legacy applications, enabling semantic retrieval over previously
+                                            inaccessible enterprise assets</li>
+                                    </ul>
+                                    <div class="badge-row timeline-tech">
+                                        <span class="badge">GCP</span>
+                                        <span class="badge">Google Vertex AI</span>
+                                        <span class="badge">Google ADK</span>
+                                        <span class="badge">Spanner</span>
+                                        <span class="badge">Python</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">Dec 2024 &mdash; Jul 2025</div>
+                                <div class="timeline-title">Senior Developer</div>
+                                <div class="timeline-company">Levio &mdash; Desjardins, Quebec</div>
+                                <div class="timeline-body">
+                                    <ul>
+                                        <li>Contributed to the global delivery plan for the GPAP modernization project
+                                            at Desjardins</li>
+                                        <li>Developed a documentation visualization tool to streamline Confluence page
+                                            administration</li>
+                                        <li>Designed CI/CD pipelines aligned with enterprise governance strategies</li>
+                                    </ul>
+                                    <div class="badge-row timeline-tech">
+                                        <span class="badge">Azure</span>
+                                        <span class="badge">Jira</span>
+                                        <span class="badge">Confluence</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">Aug 2024 &mdash; Present</div>
+                                <div class="timeline-title">Cloud Architect</div>
+                                <div class="timeline-company">Levio &mdash; RSDE-CSPRP (Personal Data Protection),
+                                    Quebec</div>
+                                <div class="timeline-body">
+                                    <ul>
+                                        <li>Designed and implemented a RAG-based conversational AI system for personal
+                                            data protection compliance</li>
+                                        <li>Architected the full AWS infrastructure and deployed the solution end-to-end
+                                            using Terraform</li>
+                                        <li>Built the frontend interface with Flutter, integrating Cognito-based
+                                            authentication</li>
+                                        <li>Managed DevOps architecture including Azure and AWS deployment pipelines
+                                        </li>
+                                    </ul>
+                                    <div class="badge-row timeline-tech">
+                                        <span class="badge">AWS Bedrock</span>
+                                        <span class="badge">LangChain</span>
+                                        <span class="badge">Python</span>
+                                        <span class="badge">Terraform</span>
+                                        <span class="badge">Flutter</span>
+                                        <span class="badge">Cognito</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">Apr 2024 &mdash; Jul 2024</div>
+                                <div class="timeline-title">Cloud Architect &mdash; AI Orchestration</div>
+                                <div class="timeline-company">Levio &mdash; Ministry of Cybersecurity and Digital (MCN),
+                                    Quebec</div>
+                                <div class="timeline-body">
+                                    <ul>
+                                        <li>Designed and optimized LLM orchestration for a generative AI chatbot within
+                                            an AWS Landing Zone Accelerator environment</li>
+                                        <li>Conducted R&D on orchestration techniques to reduce latency and improve
+                                            chatbot response quality</li>
+                                        <li>Implemented a test bench to track and measure conversational AI performance
+                                        </li>
+                                        <li>Trained the production support team on system architecture, troubleshooting,
+                                            and maintenance</li>
+                                    </ul>
+                                    <div class="badge-row timeline-tech">
+                                        <span class="badge">AWS Bedrock</span>
+                                        <span class="badge">LangChain</span>
+                                        <span class="badge">Python</span>
+                                        <span class="badge">PGVector</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">Sep 2022 &mdash; Jul 2023</div>
+                                <div class="timeline-title">DevOps Analyst</div>
+                                <div class="timeline-company">Levio &mdash; Ministry of Justice of Quebec (MJQ),
+                                    Quebec</div>
+                                <div class="timeline-body">
+                                    <ul>
+                                        <li>Configured, deployed, and managed Azure cloud resources supporting ministry
+                                            initiatives</li>
+                                        <li>Performed in-depth performance analysis using Azure monitoring and logging
+                                            tools</li>
+                                        <li>Developed a pipeline variable analysis and optimization tool to eliminate
+                                            redundancies between source code and IaC</li>
+                                        <li>Configured access control strategies for solution versioning and deployment
+                                        </li>
+                                    </ul>
+                                    <div class="badge-row timeline-tech">
+                                        <span class="badge">Azure</span>
+                                        <span class="badge">Azure DevOps</span>
+                                        <span class="badge">PowerShell</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">Jan 2020 &mdash; Aug 2022</div>
+                                <div class="timeline-title">Software Developer</div>
+                                <div class="timeline-company">Noovelia, Quebec</div>
+                                <div class="timeline-body">
+                                    <ul>
+                                        <li>Maintained and developed core features for warehouse management and gas
+                                            delivery tracking systems using C# .NET, Xamarin, and SQL Server</li>
+                                        <li>Refactored the frontend codebase by 40%, resulting in 2&ndash;3x faster
+                                            execution speeds</li>
+                                        <li>Improved UI/UX across a dozen features in a Flutter application,
+                                            collaborating in a multidisciplinary environment</li>
+                                        <li>Maintained and refactored REST APIs leveraging a microservices architecture
+                                        </li>
+                                    </ul>
+                                    <div class="badge-row timeline-tech">
+                                        <span class="badge">C# .NET</span>
+                                        <span class="badge">Xamarin</span>
+                                        <span class="badge">SQL Server</span>
+                                        <span class="badge">Flutter</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="dimension mt-md"><span class="dimension-value">6+ Years of Experience</span></div>
+                    </div>
+                </section>
+
+                <!-- 03. SKILLS & EXPERTISE -->
+                <section class="section" id="skills">
+                    <div class="section-header">
+                        <span class="section-number">A-03</span>
+                        <h2 class="section-title">Skills & Expertise</h2>
+                    </div>
+                    <div class="content-pad">
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>GenAI & ML</h4>
+                                <ul class="skill-list">
+                                    <li>LLM Orchestration</li>
+                                    <li>RAG / GraphRAG</li>
+                                    <li>AWS Bedrock</li>
+                                    <li>Google Vertex AI / ADK</li>
+                                    <li>LangChain / LlamaIndex</li>
+                                    <li>Vector DBs (PGVector, ChromaDB, Neo4J)</li>
+                                    <li>Langfuse / FMEval</li>
+                                </ul>
+                            </div>
+
+                            <div class="skill-category">
+                                <h4>Cloud & DevOps</h4>
+                                <ul class="skill-list">
+                                    <li>AWS (EC2, Lambda, Bedrock, S3)</li>
+                                    <li>GCP (Vertex AI, Cloud Run)</li>
+                                    <li>Terraform</li>
+                                    <li>Docker</li>
+                                    <li>GitHub Actions</li>
+                                    <li>Azure</li>
+                                </ul>
+                            </div>
+
+                            <div class="skill-category">
+                                <h4>Development</h4>
+                                <ul class="skill-list">
+                                    <li>Python</li>
+                                    <li>C# / .NET</li>
+                                    <li>FastAPI</li>
+                                    <li>Dart / Flutter</li>
+                                    <li>pytest / CI/CD</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="divider mt-lg mb-lg"><span class="divider-symbol">CERTIFICATIONS</span></div>
+
+                        <div class="cert-grid">
+                            <div class="cert-item">
+                                <div class="cert-marker">1</div>
+                                <div class="cert-name">AWS Cloud Practitioner</div>
+                            </div>
+                            <div class="cert-item">
+                                <div class="cert-marker">2</div>
+                                <div class="cert-name">Terraform Associate</div>
+                            </div>
+                        </div>
+
+                        <div class="divider mt-lg mb-lg"><span class="divider-symbol">LANGUAGES</span></div>
+
+                        <div class="badge-row">
+                            <span class="badge badge-dark">French (native)</span>
+                            <span class="badge badge-dark">English (bilingual)</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 04. PROJECTS & OPEN SOURCE -->
+                <section class="section" id="projects">
+                    <div class="section-header">
+                        <span class="section-number">A-04</span>
+                        <h2 class="section-title">Projects & Open Source</h2>
+                    </div>
+                    <div class="content-pad">
+                        <div class="projects-grid">
+
+                            <div class="project-card">
+                                <div class="project-card-header">Haystack 2 Contributor</div>
+                                <div class="project-card-body">
+                                    <p>Implemented AWS Bedrock integration for LLM tool calling, enabling function-based
+                                        agentic workflows in the Haystack 2 open source framework.</p>
+                                    <div class="badge-row mb-md">
+                                        <span class="badge badge-accent">Open Source</span>
+                                        <span class="badge">AWS Bedrock</span>
+                                        <span class="badge">LLM</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-card-header">Logistic Platform Prototype</div>
+                                <div class="project-card-body">
+                                    <p>Built a prototype logistics management system using Supabase and Flutter,
+                                        showcasing real-time tracking and project visualization capabilities.</p>
+                                    <div class="badge-row mb-md">
+                                        <span class="badge">Supabase</span>
+                                        <span class="badge">Flutter</span>
+                                        <span class="badge">Real-time</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-card-header">RAG Solutions in AWS</div>
+                                <div class="project-card-body">
+                                    <p>Architecture and implementation of RAG (retrieval augmented generation) solutions
+                                        in AWS for company HR agent.</p>
+                                    <div class="badge-row mb-md">
+                                        <span class="badge">AWS</span>
+                                        <span class="badge">RAG</span>
+                                        <span class="badge">LLM</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-card-header">Game Server Management</div>
+                                <div class="project-card-body">
+                                    <p>Personal video game servers deployment, management and backup automation with
+                                        AWS.</p>
+                                    <div class="badge-row mb-md">
+                                        <span class="badge">AWS</span>
+                                        <span class="badge">Automation</span>
+                                        <span class="badge">DevOps</span>
+                                    </div>
+                                    <a href="https://github.com/FloRul/Satiserver" target="_blank" rel="noopener"
+                                        class="project-link">View on GitHub &rarr;</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 05. EDUCATION -->
+                <section class="section" id="education">
+                    <div class="section-header">
+                        <span class="section-number">A-05</span>
+                        <h2 class="section-title">Education</h2>
+                    </div>
+                    <div class="content-pad">
+                        <div class="education-item">
+                            <div class="edu-year">2017</div>
+                            <div>
+                                <div class="edu-title">Bachelor in Applied Sciences</div>
+                                <div class="edu-detail">UQAC &mdash; Computer Science</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 06. CONTACT -->
+                <section class="section" id="contact">
+                    <div class="section-header">
+                        <span class="section-number">A-06</span>
+                        <h2 class="section-title">Get In Touch</h2>
+                    </div>
+                    <div class="content-pad">
+                        <div class="contact-grid mb-lg">
+                            <div>
+                                <div class="contact-item mb-md">
+                                    <div class="contact-marker">@</div>
+                                    <div>
+                                        <span class="contact-label">Email</span>
+                                        <span class="contact-value"><a
+                                                href="mailto:rumiel.florian@gmail.com">rumiel.florian@gmail.com</a></span>
+                                    </div>
+                                </div>
+                                <div class="contact-item mb-md">
+                                    <div class="contact-marker">in</div>
+                                    <div>
+                                        <span class="contact-label">LinkedIn</span>
+                                        <span class="contact-value"><a href="https://linkedin.com/in/florian-rumiel"
+                                                target="_blank"
+                                                rel="noopener">linkedin.com/in/florian-rumiel</a></span>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="contact-marker">&lt;/&gt;</div>
+                                    <div>
+                                        <span class="contact-label">GitHub</span>
+                                        <span class="contact-value"><a href="https://github.com/FloRul" target="_blank"
+                                                rel="noopener">github.com/FloRul</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+            <!-- TITLE BLOCK -->
+            <div class="title-block">
+                <div class="title-block-main">
+                    <div>
+                        <div class="title-block-row"><span class="title-block-label">Subject</span><span
+                                class="title-block-value">Portfolio</span></div>
+                        <div class="title-block-row"><span class="title-block-label">Author</span><span
+                                class="title-block-value">Florian Rumiel</span></div>
+                    </div>
+                    <div>
+                        <div class="title-block-row"><span class="title-block-label">Role</span><span
+                                class="title-block-value">Cloud Architect</span></div>
+                        <div class="title-block-row"><span class="title-block-label">Focus</span><span
+                                class="title-block-value">Generative AI</span></div>
+                    </div>
+                    <div>
+                        <div class="title-block-row"><span class="title-block-label">Updated</span><span
+                                class="title-block-value">2026-02-06</span></div>
+                        <div class="title-block-row"><span class="title-block-label">Location</span><span
+                                class="title-block-value">Quebec, CA</span></div>
                     </div>
                 </div>
-
-                <!-- Project 5 -->
-                <div class="project-card" data-aos="fade-up">
-                    <div class="project-content">
-                        <h3>Haystack 2 Contribution</h3>
-                        <p>Open source contribution to the Haystack 2 project (AWS Bedrock integration for LLM tool
-                            calling)</p>
-                        <div class="tech-stack">
-                            <span>Open Source</span>
-                            <span>AWS Bedrock</span>
-                            <span>LLM</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="project-card" data-aos="fade-up">
-                    <div class="project-content">
-                        <h3>Resume Enrichment Tool</h3>
-                        <p>Automated resume enrichment tool to facilitate assignment agent work</p>
-                        <div class="tech-stack">
-                            <span>NLP</span>
-                            <span>Python</span>
-                            <span>AI</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 7 -->
-                <div class="project-card" data-aos="fade-up">
-                    <div class="project-content">
-                        <h3>RitFlocking</h3>
-                        <p>Open Source library of steering behaviors for autonomous agents</p>
-                        <div class="tech-stack">
-                            <span>C#</span>
-                            <span>Unity</span>
-                            <span>AI</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/FloRul/RitFlocking" target="_blank" class="btn btn-sm">
-                                <i class="fab fa-github"></i> View on GitHub
-                            </a>
-                        </div>
-                    </div>
+                <div class="title-block-info">
+                    <div class="title-block-row"><span class="title-block-label">Sheet</span><span
+                            class="title-block-value">A-001</span></div>
+                    <div class="title-block-row"><span class="title-block-label">Revision</span><span
+                            class="title-block-value" style="color: var(--accent-rust);">01</span></div>
+                    <div class="title-block-row"><span class="title-block-label">Status</span><span
+                            class="title-block-value">Active</span></div>
                 </div>
             </div>
+
+            <!-- FOOTER -->
+            <footer class="site-footer" role="contentinfo">
+                <div class="footer-content">
+                    <div>
+                        <div class="footer-logo">Florian Rumiel</div>
+                        <p>Cloud Architect // Generative AI Specialist</p>
+                        <p>&copy; 2026 Florian Rumiel. All rights reserved.</p>
+                        <div class="footer-links">
+                            <a href="#summary">Summary</a>
+                            <a href="#experience">Experience</a>
+                            <a href="#skills">Skills</a>
+                            <a href="#projects">Projects</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+                    </div>
+                    <div class="footer-stamp">
+                        <div class="title-block-row"><span class="title-block-label">Reviewed</span><span
+                                class="title-block-value">2026-02-06</span></div>
+                        <div class="stamp-status">Active</div>
+                    </div>
+                </div>
+            </footer>
+
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>Get In Touch</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info" data-aos="fade-right">
-                    <div class="contact-item">
-                        <div class="icon"><i class="fas fa-envelope"></i></div>
-                        <div class="info">
-                            <h3>Email</h3>
-                            <p><a href="mailto:rumiel.florian@gmail.com">rumiel.florian@gmail.com</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon"><i class="fab fa-linkedin"></i></div>
-                        <div class="info">
-                            <h3>LinkedIn</h3>
-                            <p><a href="https://linkedin.com/in/florian-rumiel"
-                                    target="_blank">linkedin.com/in/florian-rumiel</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon"><i class="fab fa-github"></i></div>
-                        <div class="info">
-                            <h3>GitHub</h3>
-                            <p><a href="https://github.com/FloRul" target="_blank">github.com/FloRul</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form" data-aos="fade-left">
-                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-                        <!-- Replace with your actual Web3Forms Access Key -->
-                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-                        <input type="hidden" name="subject" value="New Contact Form Submission from Portfolio">
-                        <input type="hidden" name="from_name" value="Portfolio Contact Form">
-
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <div class="h-captcha" data-captcha="true"></div>
-                        <button type="submit" class="btn btn-primary">
-                            <span class="btn-text">Send Message</span>
-                            <span class="btn-loading" style="display: none;">Sending...</span>
-                        </button>
-                        <div id="formStatus" class="form-status"></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer" role="contentinfo">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <a href="#hero"><span class="primary-color">F</span>lorian<span
-                            class="primary-color">R</span>umiel</a>
-                </div>
-                <div class="footer-social">
-                    <a href="https://linkedin.com/in/florian-rumiel" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/FloRul" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:rumiel.florian@gmail.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-                <div class="footer-nav">
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Florian Rumiel. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <div id="backToTop" class="back-to-top">
-        <i class="fas fa-chevron-up"></i>
     </div>
 
-    <!-- JS Libraries -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <!-- Main JS -->
-    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
