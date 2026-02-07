@@ -11,6 +11,9 @@
 \usepackage{xcolor}
 \usepackage{tabularx}
 
+% Remove page numbers
+\pagenumbering{gobble}
+
 % Font selection - clean and professional font
 \usepackage{helvet} % Use Helvetica for the entire document
 \renewcommand{\familydefault}{\sfdefault} % Set sans-serif as the default font
@@ -47,26 +50,21 @@
 \begin{document}
 \begin{center}
   {\LARGE\textbf{Florian Rumiel}} \\[0.3em]
-  {\large\textit{Cloud Architect -- Generative AI Specialist}} \\[0.5em]
-  \begin{tabular}{r c l}
-    % Contact details
-    \textit{Email:} & \href{mailto:rumiel.florian@gmail.com}{rumiel.florian@gmail.com} & \textit{Phone:} +418-905-3574 \\
-    \textit{LinkedIn:} & \href{https://linkedin.com/in/florian-rumiel}{linkedin.com/in/florian-rumiel} & \textit{GitHub:} \href{https://github.com/FloRul}{github.com/FloRul} \\
-    \textit{Website:} & \href{https://florian-rumiel.com}{florianrumiel.com} \\
-  \end{tabular}
+  {\large\textit{Cloud Architect -- Generative AI Specialist}} \\[0.3em]
+  \faEnvelope\ \href{mailto:rumiel.florian@gmail.com}{rumiel.florian@gmail.com}
+  \quad \faPhone\ +418-905-3574
 \end{center}
 
 \section*{Professional Summary}
 Cloud Architect specializing in generative AI systems, RAG architectures, and LLM orchestration. Experience designing and deploying production AI applications on AWS Bedrock and Google Vertex AI with Terraform and modern orchestration frameworks. Strong foundation in cloud infrastructure, vector databases, and DevOps practices. Open source contributor focused on advancing AI tooling ecosystems.
 
 \section*{Technical Skills}
-\begin{tabularx}{\textwidth}{@{}l X@{}}
-\textbf{GenAI:} & LLM Orchestration, RAG/GraphRAG, Agentic AI, AWS Bedrock, Google Vertex AI/ADK, LangChain, LlamaIndex, Haystack 2, Vector DBs (PGVector, ChromaDB, Neo4J), Langfuse, FMEval \\[0.2em]
-\textbf{Cloud:} & AWS (EC2, Lambda, Bedrock, S3), GCP (Vertex AI, Cloud Run), Terraform, Docker, GitHub Actions \\[0.2em]
-\textbf{Dev:} & Python, C\#/.NET, FastAPI, \hfill \textbf{Testing:} pytest, CI/CD pipelines \\[0.2em]
-\textbf{Certs:} & AWS Cloud Practitioner, Terraform Associate \\[0.2em]
-\textbf{Languages:} & French (native), English (bilingual) \\
-\end{tabularx}
+LLM Orchestration, RAG/GraphRAG, Agentic AI, AWS Bedrock, Google Vertex AI/ADK,
+LangChain, LlamaIndex, Haystack 2, PGVector, ChromaDB, Neo4J, Langfuse, FMEval,
+AWS (EC2, Lambda, S3), GCP (Vertex AI, Cloud Run), Terraform, Docker, GitHub Actions,
+Python, C\#/.NET, FastAPI, pytest, CI/CD pipelines
+\,$\cdot$\, AWS Cloud Practitioner, Terraform Associate
+\,$\cdot$\, French (native), English (bilingual)
 
 \section*{Professional Experience}
 \textbf{Cloud Architect -- GenAI} \hfill Aug 2025 -- Jan 2026\\
@@ -132,5 +130,13 @@ Cloud Architect specializing in generative AI systems, RAG architectures, and LL
 \item \textbf{Haystack 2 Contributor:} Implemented AWS Bedrock integration for LLM tool calling, enabling function-based agentic workflows.
 \item \textbf{Logistic Platform Prototype:} Built a prototype logistics management system using Supabase and Flutter, showcasing real-time tracking and project visualization capabilities.
 \end{itemize}
+
+\vspace{8pt}
+\begin{center}
+\small
+\faLinkedin\ \href{https://linkedin.com/in/florian-rumiel}{linkedin.com/in/florian-rumiel}
+\quad \faGithub\ \href{https://github.com/FloRul}{github.com/FloRul}
+\quad \faGlobe\ \href{https://florian-rumiel.com}{florianrumiel.com}
+\end{center}
 
 \end{document}
