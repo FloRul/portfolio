@@ -1,0 +1,125 @@
+﻿\documentclass[10pt,letterpaper]{article}
+
+% Basic packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=0.5in,right=0.5in,top=0.25in,bottom=0.25in]{geometry}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tabularx}
+
+% Remove page numbers
+\pagenumbering{gobble}
+
+% Font selection - clean and professional font
+\usepackage{helvet} % Use Helvetica for the entire document
+\renewcommand{\familydefault}{\sfdefault} % Set sans-serif as the default font
+
+% Define colors
+\definecolor{primary}{RGB}{0, 90, 160}
+\definecolor{darkgray}{RGB}{80, 80, 80}
+
+% Configure sections
+\titleformat{\section}
+  {\Large\bfseries\color{primary}}
+  {}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+
+% Configure subsections
+\titleformat{\subsection}
+  {\bfseries\color{darkgray}}
+  {}{0em}{}
+\titlespacing*{\subsection}{0pt}{4pt}{2pt}
+
+% Remove paragraph indentation
+\setlength{\parindent}{0pt}
+
+% Set up links
+\hypersetup{
+  colorlinks=true,
+  linkcolor=primary,
+  urlcolor=primary
+}
+
+% Define custom list environments
+\setlist[itemize]{leftmargin=*}
+
+\begin{document}
+\begin{center}
+  {\LARGE\textbf{Florian Rumiel}} \\[0.2em]
+  {\large\textit{Cloud Developper -- Generative AI Specialist}} \\[0.2em]
+  \faEnvelope\ \href{mailto:rumiel.florian@gmail.com}{rumiel.florian@gmail.com}
+  \quad \faPhone\ +418-905-3574
+\end{center}
+
+\section*{Professional Summary}
+Cloud developer specializing in generative AI, RAG/GraphRAG, and LLM orchestration. Designs and deploys production AI applications on AWS Bedrock and Google Vertex AI using Terraform. Strong foundation in cloud infrastructure, vector databases, and DevOps. Open source contributor advancing AI tooling ecosystems.
+
+\section*{Technical Skills}
+LLM Orchestration, RAG/GraphRAG, Agentic AI, AWS Bedrock, Google Vertex AI/ADK,
+LangChain, LlamaIndex, Haystack 2, PGVector, ChromaDB, Neo4J, Langfuse, FMEval,
+AWS (EC2, Lambda, S3), GCP (Vertex AI, Cloud Run), Terraform, Docker, GitHub Actions,
+Python, C\#/.NET, FastAPI, pytest, CI/CD
+\,$\cdot$\, AWS Cloud Practitioner, Terraform Associate \,$\cdot$\, French (native), English (bilingual)
+
+\section*{Professional Experience}
+\textbf{Cloud Developper -- GenAI} \hfill Aug 2025 -- Jan 2026\\
+\textit{Levio -- Simons, Quebec}
+\begin{itemize}[nosep]
+\item Built multi-format document ingestion on GCP for a RAG/GraphRAG knowledge base, supporting video and legacy codebases (IBM i / AS400)
+\item Designed extraction pipelines with Google Vertex AI and ADK to surface business knowledge from legacy apps, backed by Spanner
+\end{itemize}
+
+\vspace{2pt}
+\textbf{Senior Developer} -- \textit{Levio -- Desjardins, Quebec} \hfill Dec 2024 -- Jul 2025
+
+\vspace{2pt}
+\textbf{Cloud Developper -- GenAI \& AI Orchestration} \hfill Apr 2024 -- Present\\
+\textit{Levio -- RSDE-CSPRP / Ministry of Cybersecurity and Digital, Quebec}
+\begin{itemize}[nosep]
+\item Designed RAG-based conversational AI on AWS Bedrock (Claude 3, Mistral AI) with LangChain for data protection compliance and government chatbot use cases
+\item Deployed full AWS infrastructure end-to-end using Terraform
+\item Conducted R\&D on LLM orchestration to reduce latency and improve response quality, backed by PGVector
+\item Built a test bench measuring conversational AI performance; trained production support teams
+\end{itemize}
+
+\vspace{2pt}
+\textbf{DevOps Analyst} \hfill Sep 2022 -- Jul 2023\\
+\textit{Levio -- Ministry of Justice of Quebec (MJQ), Quebec}
+\begin{itemize}[nosep]
+\item Configured and managed Azure cloud resources supporting ministry initiatives
+\item Developed a PowerShell pipeline analysis tool to eliminate redundancies between source code and IaC
+\item Configured access control strategies for versioning and deployment in Azure DevOps
+\end{itemize}
+
+\vspace{2pt}
+\textbf{Software Developer} \hfill Jan 2020 -- Aug 2022\\
+\textit{Noovelia, Quebec}
+\begin{itemize}[nosep]
+\item Maintained and developed warehouse management and gas delivery tracking systems using C\# .NET, Xamarin, and SQL Server
+\item Refactored frontend codebase by 40\%, achieving 2--3x faster execution
+\item Improved UI/UX across a dozen features in a Flutter app within a multidisciplinary team
+\item Maintained and refactored REST APIs in a microservices architecture
+\end{itemize}
+
+\section*{Education}
+\textbf{Bachelor in Applied Sciences} - Computer Science \hfill UQAC, 2017
+
+\section*{Projects \& Open Source}
+\begin{itemize}[nosep]
+\item \textbf{Haystack 2 Contributor:} Implemented AWS Bedrock integration for LLM tool calling, enabling function-based agentic workflows.
+\item \textbf{Logistic Platform Prototype:} Built a prototype logistics management system using Supabase and Flutter, showcasing real-time tracking and project visualization capabilities.
+\end{itemize}
+
+\vspace{4pt}
+\begin{center}
+\small
+\faLinkedin\ \href{https://linkedin.com/in/florian-rumiel}{linkedin.com/in/florian-rumiel}
+\quad \faGithub\ \href{https://github.com/FloRul}{github.com/FloRul}
+\quad \faGlobe\ \href{https://florian-rumiel.com}{florianrumiel.com}
+\end{center}
+
+\end{document}
