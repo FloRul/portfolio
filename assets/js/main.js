@@ -172,7 +172,8 @@ document.addEventListener('DOMContentLoaded', function ()
                 btnLoading.style.display = 'none';
 
                 // Clear status message after 5 seconds
-                setTimeout(() => {
+                setTimeout(() =>
+                {
                     formStatus.innerHTML = '';
                 }, 5000);
             }
@@ -184,7 +185,7 @@ document.addEventListener('DOMContentLoaded', function ()
     if (typedTextElement && typeof Typed !== 'undefined') {
         new Typed('.typed-text', {
             strings: [
-                'AI Solutions Architect',
+                'AI Solutions Developper',
                 'RAG Systems Expert',
                 'Google Vertex AI Specialist',
                 'LLM Orchestration Engineer',
