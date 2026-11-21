@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', function ()
     if (typedTextElement && typeof Typed !== 'undefined') {
         new Typed('.typed-text', {
             strings: [
-                'AI Solutions Developper',
+                'AI Solutions Architect',
                 'RAG Systems Expert',
                 'Google Vertex AI Specialist',
                 'LLM Orchestration Engineer',

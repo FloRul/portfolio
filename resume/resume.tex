@@ -21,6 +21,7 @@
 % Define colors
 \definecolor{primary}{RGB}{0, 90, 160}
 \definecolor{darkgray}{RGB}{80, 80, 80}
+\definecolor{todored}{RGB}{200, 0, 0}
 
 % Configure sections
 \titleformat{\section}
@@ -44,32 +45,47 @@
   urlcolor=primary
 }
 
+% Visible placeholder for facts still to be confirmed (remove all before publishing)
+\newcommand{\todo}[1]{\textbf{\color{todored}[TODO: #1]}}
+
 % Define custom list environments
 \setlist[itemize]{leftmargin=*}
 
 \begin{document}
 \begin{center}
   {\LARGE\textbf{Florian Rumiel}} \\[0.2em]
-  {\large\textit{Cloud Developper -- Generative AI Specialist}} \\[0.2em]
+  {\large\textit{AI Architect -- Governed RAG \& GraphRAG}} \\[0.2em]
   \faEnvelope\ \href{mailto:rumiel.florian@gmail.com}{rumiel.florian@gmail.com}
   \quad \faPhone\ +418-905-3574
 \end{center}
 
 \section*{Professional Summary}
-Cloud developer specializing in generative AI, RAG/GraphRAG, and LLM orchestration. Designs and deploys production AI applications on AWS Bedrock and Google Vertex AI using Terraform. Strong foundation in cloud infrastructure, vector databases, and DevOps. Open source contributor advancing AI tooling ecosystems.
+AI Architect designing governed RAG and GraphRAG systems for regulated enterprises. Background in .NET development and DevOps, which is why I design for how a system is run, governed and maintained, not only how it retrieves. Currently architect and hands-on engineer on a knowledge platform for a major Canadian financial institution, built with Haystack, AWS and Terraform. Open source contributor to Haystack.
 
 \section*{Technical Skills}
-LLM Orchestration, RAG/GraphRAG, Agentic AI, AWS Bedrock, Google Vertex AI/ADK,
-LangChain, LlamaIndex, Haystack 2, PGVector, ChromaDB, Neo4J, Langfuse, FMEval,
+Solution Architecture, Data Governance, RAG/GraphRAG, Agentic Retrieval, Agentic AI, LLM Orchestration,
+Haystack, LangChain, LlamaIndex, AWS Bedrock, Google Vertex AI/ADK, PGVector, ChromaDB, Neo4J, Langfuse, FMEval,
 AWS (EC2, Lambda, S3), GCP (Vertex AI, Cloud Run), Terraform, Docker, GitHub Actions,
 Python, C\#/.NET, FastAPI, pytest, CI/CD
-\,$\cdot$\, AWS Cloud Practitioner, Terraform Associate \,$\cdot$\, French (native), English (bilingual)
+\,$\cdot$\, AWS Cloud Practitioner (expired Oct 2026), Terraform Associate (expired Sep 2025) \,$\cdot$\, French (native), English (bilingual)
 
 \section*{Professional Experience}
-\textbf{Cloud Developper -- GenAI} \hfill Aug 2025 -- Jan 2026\\
+\textbf{Développeur Agentique} \hfill Jul 2026 -- Present\\
+\textit{Vooban -- Major Canadian financial institution}
+\begin{itemize}[nosep]
+\item Architect and hands-on engineer on a governed RAG/GraphRAG knowledge platform for a major Canadian financial institution (in development)
+\item Designed the access-control model, and designed and implemented lineage, taxonomy ownership, approval workflows and auditability, integrated with the client's existing infrastructure and organization
+\item Designed a multi-taxonomy model that lets taxonomies be split and reorganized across departments that don't coordinate
+\item Designed an agent that consumes the platform's retrieval endpoints using multiple retrieval techniques
+\item Set technical direction and mentored a team of 4--5 developers
+\item {\todo{add one countable figure, e.g. teams in pilot / taxonomies in test / data sources}}
+\end{itemize}
+
+\vspace{2pt}
+\textbf{Cloud Architect -- GenAI} \todo{confirm title matches what Levio called me} \hfill Aug 2025 -- Jan 2026\\
 \textit{Levio -- Simons, Quebec}
 \begin{itemize}[nosep]
-\item Built multi-format document ingestion on GCP for a RAG/GraphRAG knowledge base, supporting video and legacy codebases (IBM i / AS400)
+\item Architected multi-format document ingestion on GCP for a RAG/GraphRAG knowledge base, supporting video and legacy codebases (IBM i / AS400)
 \item Designed extraction pipelines with Google Vertex AI and ADK to surface business knowledge from legacy apps, backed by Spanner
 \end{itemize}
 
@@ -77,11 +93,11 @@ Python, C\#/.NET, FastAPI, pytest, CI/CD
 \textbf{Senior Developer} -- \textit{Levio -- Desjardins, Quebec} \hfill Dec 2024 -- Jul 2025
 
 \vspace{2pt}
-\textbf{Cloud Developper -- GenAI \& AI Orchestration} \hfill Apr 2024 -- Present\\
-\textit{Levio -- RSDE-CSPRP / Ministry of Cybersecurity and Digital, Quebec}
+\textbf{Cloud Architect -- GenAI \& AI Orchestration} \todo{confirm title matches what Levio called me} \hfill Apr 2024 -- \todo{confirm end date}\\
+\textit{Levio -- RSDE-CSPRP / Ministry of Cybersecurity and Digital, Quebec} \todo{reconcile Levio AI dates with LinkedIn (Jan 2025)}
 \begin{itemize}[nosep]
 \item Designed RAG-based conversational AI on AWS Bedrock (Claude 3, Mistral AI) with LangChain for data protection compliance and government chatbot use cases
-\item Deployed full AWS infrastructure end-to-end using Terraform
+\item Architected and deployed the full AWS infrastructure end-to-end using Terraform; built a Flutter front end with Cognito authentication
 \item Conducted R\&D on LLM orchestration to reduce latency and improve response quality, backed by PGVector
 \item Built a test bench measuring conversational AI performance; trained production support teams
 \end{itemize}
@@ -106,11 +122,11 @@ Python, C\#/.NET, FastAPI, pytest, CI/CD
 \end{itemize}
 
 \section*{Education}
-\textbf{Bachelor in Applied Sciences} - Computer Science \hfill UQAC, 2017
+\textbf{Bachelor of Applied Science} -- Video Game Design \& Development \todo{confirm exact wording against diploma} \hfill UQAC, 2017
 
 \section*{Projects \& Open Source}
 \begin{itemize}[nosep]
-\item \textbf{Haystack 2 Contributor:} Implemented AWS Bedrock integration for LLM tool calling, enabling function-based agentic workflows.
+\item \textbf{Haystack Contributor:} Fixed streaming\_callback serialization in Haystack's AmazonBedrockChatGenerator (\href{https://github.com/deepset-ai/haystack-core-integrations/pull/685}{PR \#685, merged}). Proposed Bedrock Converse support to enable tool calling (\href{https://github.com/deepset-ai/haystack-core-integrations/pull/1061}{PR \#1061, not merged}). \todo{PR status confirmed by me}
 \item \textbf{Logistic Platform Prototype:} Built a prototype logistics management system using Supabase and Flutter, showcasing real-time tracking and project visualization capabilities.
 \end{itemize}
 
@@ -119,7 +135,7 @@ Python, C\#/.NET, FastAPI, pytest, CI/CD
 \small
 \faLinkedin\ \href{https://linkedin.com/in/florian-rumiel}{linkedin.com/in/florian-rumiel}
 \quad \faGithub\ \href{https://github.com/FloRul}{github.com/FloRul}
-\quad \faGlobe\ \href{https://florian-rumiel.com}{florianrumiel.com}
+\quad \faGlobe\ \href{https://florianrumiel.com}{florianrumiel.com}
 \end{center}
 
 \end{document}
