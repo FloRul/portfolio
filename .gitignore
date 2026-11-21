@@ -313,3 +313,8 @@ assets/styles/Wireframe — Design System_files/css2.css
 
 # Local-only LinkedIn copy pack (never deploy)
 linkedin/
+
+# Impeccable design context (local-only, never commit or deploy)
+PRODUCT.md
+DESIGN.md
+.impeccable/
