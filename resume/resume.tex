@@ -1,0 +1,136 @@
+﻿\documentclass[10pt,letterpaper]{article}
+
+% Basic packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=0.5in,right=0.5in,top=0.25in,bottom=0.25in]{geometry}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tabularx}
+
+% Remove page numbers
+\pagenumbering{gobble}
+
+% Font selection - clean and professional font
+\usepackage{helvet} % Use Helvetica for the entire document
+\renewcommand{\familydefault}{\sfdefault} % Set sans-serif as the default font
+
+% Define colors
+\definecolor{primary}{RGB}{0, 90, 160}
+\definecolor{darkgray}{RGB}{80, 80, 80}
+\definecolor{todored}{RGB}{200, 0, 0}
+
+% Configure sections
+\titleformat{\section}
+  {\Large\bfseries\color{primary}}
+  {}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+
+% Configure subsections
+\titleformat{\subsection}
+  {\bfseries\color{darkgray}}
+  {}{0em}{}
+\titlespacing*{\subsection}{0pt}{4pt}{2pt}
+
+% Remove paragraph indentation
+\setlength{\parindent}{0pt}
+
+% Set up links
+\hypersetup{
+  colorlinks=true,
+  linkcolor=primary,
+  urlcolor=primary
+}
+
+% Visible placeholder for facts still to be confirmed (remove all before publishing)
+\newcommand{\todo}[1]{\textbf{\color{todored}[TODO: #1]}}
+
+% Define custom list environments
+\setlist[itemize]{leftmargin=*}
+
+\begin{document}
+\begin{center}
+  {\LARGE\textbf{Florian Rumiel}} \\[0.2em]
+  {\large\textit{AI Architect -- Governed RAG \& GraphRAG}} \\[0.2em]
+  \faEnvelope\ \href{mailto:rumiel.florian@gmail.com}{rumiel.florian@gmail.com}
+  \quad \faPhone\ +418-905-3574 \\
+  \faLinkedin\ \href{https://linkedin.com/in/florian-rumiel}{linkedin.com/in/florian-rumiel}
+  \quad \faGithub\ \href{https://github.com/FloRul}{github.com/FloRul}
+  \quad \faGlobe\ \href{https://florianrumiel.com}{florianrumiel.com}
+\end{center}
+
+\section*{Professional Summary}
+AI Architect designing governed RAG and GraphRAG systems for regulated enterprises. Background in .NET development and DevOps, which is why I design for how a system is run, governed and maintained, not only how it retrieves. Currently architect and hands-on engineer on a knowledge platform for a major Canadian financial institution, built with Haystack, AWS and Terraform. Open source contributor to Haystack.
+
+\section*{Technical Skills}
+Solution Architecture, Data Governance, RAG/GraphRAG, Agentic Retrieval, Agentic AI, LLM Orchestration,
+Haystack, LangChain, LlamaIndex, AWS Bedrock, Google Vertex AI/ADK, PGVector, ChromaDB, Neo4J, Langfuse, FMEval,
+AWS (EC2, Lambda, S3), GCP (Vertex AI, Cloud Run), Terraform, Docker, GitHub Actions,
+Python, C\#/.NET, FastAPI, pytest, CI/CD
+\,$\cdot$\, French (native), English (bilingual)
+
+\section*{Professional Experience}
+\textbf{Agentic Developer} \hfill Jul 2026 -- Present\\
+\textit{Vooban -- Major Canadian financial institution}
+\begin{itemize}[nosep]
+\item Architect and hands-on engineer on a governed RAG/GraphRAG knowledge platform for a major Canadian financial institution (in development)
+\item Designed the access-control model, and designed and implemented lineage, taxonomy ownership, approval workflows and auditability, integrated with the client's existing infrastructure and organization
+\item Designed a multi-taxonomy model that lets taxonomies be split and reorganized across departments that don't coordinate
+\item Designed an agent that consumes the platform's retrieval endpoints using multiple retrieval techniques
+\item Set technical direction and mentored a team of 4--5 developers
+\end{itemize}
+
+\vspace{2pt}
+\textbf{Levio} -- \textit{Consultant} \hfill Sep 2022 -- Jul 2026
+
+\vspace{2pt}
+\textbf{GenAI Architect} \hfill Aug 2025 -- Jan 2026\\
+\textit{Levio -- Major Quebec retailer}
+\begin{itemize}[nosep]
+\item Architected multi-format document ingestion on GCP for a RAG/GraphRAG knowledge base, supporting video and legacy codebases (IBM i / AS400)
+\item Designed extraction pipelines with Google Vertex AI and ADK to surface business knowledge from legacy apps, backed by Spanner
+\end{itemize}
+
+\vspace{2pt}
+\textbf{Senior Developer} -- \textit{Levio -- Major Quebec financial institution} \hfill Dec 2024 -- Jul 2025
+
+\vspace{2pt}
+\textbf{Cloud Architect -- GenAI \& LLM Orchestration} \hfill Apr 2024 -- Intermittent\\
+\textit{Levio -- Internal R\&D project (personal data protection) / Quebec government ministry}
+\begin{itemize}[nosep]
+\item Designed RAG-based conversational AI on AWS Bedrock (Claude 3, Mistral AI) with LangChain for data protection compliance and government chatbot use cases
+\item Architected and deployed the full AWS infrastructure end-to-end using Terraform; built a Flutter front end with Cognito authentication
+\item Conducted R\&D on LLM orchestration to reduce latency and improve response quality, backed by PGVector
+\item Implemented GraphRAG on Neo4j and optimized database schemas using graph clustering algorithms
+\item Built a test bench measuring conversational AI performance; trained production support teams
+\end{itemize}
+
+\vspace{2pt}
+\textbf{DevOps Analyst} \hfill Sep 2022 -- Jul 2023\\
+\textit{Levio -- Quebec government ministry}
+\begin{itemize}[nosep]
+\item Configured and managed Azure cloud resources supporting ministry initiatives
+\item Developed a PowerShell pipeline analysis tool to eliminate redundancies between source code and IaC
+\item Configured access control strategies for versioning and deployment in Azure DevOps
+\end{itemize}
+
+\vspace{2pt}
+\textbf{Software Developer} \hfill Jan 2020 -- Aug 2022\\
+\textit{Noovelia, Quebec}
+\begin{itemize}[nosep]
+\item Maintained and developed warehouse management and gas delivery tracking systems using C\# .NET, Xamarin, and SQL Server
+\item Refactored frontend codebase by 40\%, achieving 2--3x faster execution
+\end{itemize}
+
+\section*{Education}
+\textbf{Bachelor of Applied Science} -- Major in Video Game Design, Minor in Computer Science \hfill UQAC, 2017
+
+\section*{Projects \& Open Source}
+\begin{itemize}[nosep]
+\item \textbf{Haystack Contributor:} Fixed streaming\_callback serialization in Haystack's AmazonBedrockChatGenerator (\href{https://github.com/deepset-ai/haystack-core-integrations/pull/685}{PR \#685, merged}). Proposed Bedrock Converse support to enable tool calling (\href{https://github.com/deepset-ai/haystack-core-integrations/pull/1061}{PR \#1061, not merged}).
+\end{itemize}
+
+\end{document}
