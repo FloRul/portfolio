@@ -1,10 +1,10 @@
-# robots.txt for https://florian-rumiel.com
+# robots.txt for https://florianrumiel.com
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://florian-rumiel.com/sitemap.xml
+Sitemap: https://florianrumiel.com/sitemap.xml
 
 # Block specific paths if needed (currently allowing all)
 # Disallow: /assets/
